@@ -1,0 +1,182 @@
+/* Reset default margin and padding for all elements */
+body {
+    margin: 0;
+}
+/* Main content area */
+main {
+    background-color: white; /* Set the background color to white */
+    width: 100%; /* Adjust this to the desired width */
+    height: auto; /* Adjust this to the desired height */
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center content vertically */
+}
+
+/* Style for rows within the content area */
+.content-row {
+    margin-top: 5vh; /* Adds vertical space between the header and this content row */
+    display: flex; /* Enables Flexbox */
+    height: 50vh; /* Sets a fixed height relative to the viewport */
+    width: 80vw; /* Constrains width to a portion of the viewport width */
+    margin-bottom: 9.99vh; /* Adds vertical space between the content and the footer */
+}
+
+/* styling for both photo and text columns */
+.photo-column, .text-column {
+    flex: 1; /* Assigns equal flex-grow value, allowing these columns to share available space equally */
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers children elements horizontally */
+    align-items: center; /* Centers children elements vertically */
+    flex-direction: column; /* Stacks children elements vertically */
+}
+
+/* Specific styling for the photo column */
+.photo-column {
+    max-width: 100%; /* Ensures the column does not exceed the parent width */
+    max-height: 100%; /* Ensures the column does not exceed a certain height */
+    overflow: hidden; /* Hides any overflow, ensuring content does not escape the bounds */
+}
+
+/* Specific styling for images within the photo column */
+.photo-column img {
+    width: 100%; /* Limit width to prevent overflow */
+    height: 100%; /* Full height of the column */
+    object-fit: cover; /* Covers the area without distortion */
+}
+
+/* text column to manage content overflow and alignment */
+.text-column {
+    overflow-y: auto; /* Allows vertical scrolling */
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stacks children elements vertically */
+    justify-content: flex-start; /* Aligns children (text) to the start of the flex container */
+    align-items: center; /* Centers items horizontally */
+    margin-left: 1vw; /* Add space between the columns */
+}
+
+/* Responsive design adjustments for smaller screens */
+@media screen and (max-width: 650px) {
+    .content-row {
+        flex-direction: column; /* Stack children vertically */
+        height: auto; /* Remove fixed height */
+    }
+    main {
+        height: auto; /* Remove fixed height */
+    }
+
+    .text-column {
+        overflow: visible; /* Make text overflow visible */
+        margin-left: 0; /* Remove left margin */
+    }
+}
+
+/* Styling for a decorative line before the bottom page content */
+.bottom-page::before {
+    content: ""; /* Necessary for ::before to work, but no actual text content */
+    display: block; /* Treats the pseudo-element as a block for layout */
+    height: 1px; /* Line thickness */
+    background-color: #000000; /* Line color */
+    width: 80vw; /* Line width */
+    margin: 1vh auto; /* Space above and center alignment */
+}
+
+/* Centered text styling for bottom page content */
+.bottom-page {
+    text-align: center; /* Center-align text */
+    max-width: 80vw; /* Limit width to prevent overflow */
+}
+
+/* Centered text styling for top page content */
+.description {
+    text-align: center; /* Center-align text */
+    max-width: 80vw; /* Limit width to prevent overflow */
+    margin-top: 2.6vh; /* Adjust as needed */
+}
+
+/* Decorative line styling after the description for visual separation */
+.description::after {
+    content: "";
+    display: block;
+    height: 1px; /* Line thickness */
+    background-color: #000000; /* Line color */
+    width: 80vw; /* Line width */
+    margin: 1vh auto; /* Space above and center alignment */
+}
+
+/* Styles for the feedback form modal */
+#feedbackForm {
+    position: fixed; /* Keeps the form fixed during scrolling */
+    left: 50%; /* Centering horizontally */
+    top: 50%; /* Centering vertically */
+    transform: translate(-50%, -50%); /* Ensures perfect centering */
+    z-index: 10; /* Ensures the form appears above other content */
+    background-color: #000000; /* Sets the background color of the form */
+    padding: 20px; /* Adds spacing inside the form around its content */
+    border-radius: 5px; /* Rounds the corners of the form */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Adds a shadow for depth */
+    width: 35%; /* Adjusts the form's width */
+    box-sizing: border-box; /* Ensures padding does not affect the form's width */
+}
+
+/* Styles for text, email inputs, and the textarea within the form */
+#feedbackForm input[type="text"],
+#feedbackForm input[type="email"],
+#feedbackForm textarea {
+    width: 100%; /* Ensures these elements take up the full width of the form */
+    margin-bottom: 5%; /* Adds vertical spacing between form elements */
+    box-sizing: border-box; /* Ensures padding does not affect element width */
+    padding: 3%; /* Adds padding inside the input fields for better text visibility */
+}
+
+
+/* Styles for the submit button */
+#feedbackForm input[type="submit"] {
+    display: block; /* Makes the button a block element to enable margin auto */
+    margin: 0 auto; /* Centers the button horizontally */
+    padding: 10px 20px; /* Adds padding inside the button */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate clickability */
+}
+
+/* Styles for the feedback toggle button */
+#feedbackToggleBtn {
+    position: fixed;
+    height: 5%; /* Adjust height as needed */
+    top: 40%; /* Middle of the screen vertically */
+    right: 0%; 
+    transform: translateY(-50%); /* Adjusts the position to truly be at the middle */
+    z-index: 11;
+    background-color: #000000; /* Example blue color, adjust as needed */
+    color: #ffffff; /* Text color */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounded corners for visual appeal */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-weight: bold; /* Makes the button text bold */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+/* Changes the background color of the button on hover for visual feedback */
+#feedbackToggleBtn:hover {
+    background-color: #880606; /* Darker shade for hover state */
+}
+
+/* Container for feedback entries */
+.feedback-container {
+    height: 100%;
+    min-height: 75vh;
+    width: 100%;
+}
+
+
+/* Centers the title text horizontally */
+.feedback-container h1 {
+    text-align: center; /* Centers the text horizontally */
+}
+
+/* Styles for individual feedback entries */
+.feedback-entry {
+    border: 1px solid #ddd;
+    padding: 10%;
+    margin-bottom: 1%;
+    border-radius: 5%;
+}

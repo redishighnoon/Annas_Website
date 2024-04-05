@@ -1,0 +1,128 @@
+/* General styling for the navigation bar */
+nav {
+    height: 10vh; /* Sets a relative height based on the viewport */
+    width: 100%; /* Ensures the navbar spans the full width of the viewport */
+    background-color: #000000; /* Applies a black background for contrast */
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Distributes space between items, pushing them to the edges */
+    align-items: center; /* Vertically centers the content within the navbar */
+}
+
+/* Styling for the left section of the navbar */
+.navbar-left {
+    margin-left: 5%; /* Adds space to the left of the links */
+}
+
+/* Styling for navbar links in the left section */
+.navbar-left a {
+    color: #ffffff; /* Sets text color to white for visibility against the dark background */
+    font-size: 1.5vh; /* Adapts font size relative to the viewport width for scalability */
+    font-family: "Arial"; /* Uses Arial */
+}
+
+/* Navbar-right styling */
+.navbar-right {
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Centers content vertically */
+    margin-left: auto; /* Pushes it to the right */
+}
+
+/* Customizes the appearance of links within the navbar-right section */
+.navbar-right a {
+    color: #ffffff; /* Ensures text is white for readability */
+    font-size: 1.5vh; /* Sets font size to be slightly smaller than navbar-left links */
+    font-family: "Arial"; /* Uses Arial */
+    text-decoration: none; /* Removes underline from links for a cleaner look */
+    margin-right: 2vw; /* Adds spacing between individual links */
+}
+
+/* Change opacity on hover */
+.navbar-right a:hover {
+    opacity: 0.5; /* Adjust as needed */
+}
+
+/* Adjusts styling for an image */
+.navbar-right a img {
+    width: auto; /* Sets width relative to the viewport, maintaining scalability */
+    height: 4vh; /* Keeps the image's aspect ratio intact */
+    max-height: 100%; /* Prevents the image from exceeding the height of its container */
+}
+
+/* Styling for the dropdown menu items, hidden by default */
+.menu-items {
+    position: absolute; /* Positions the menu relative to its parent container */
+    max-height: 0; /* Initially hidden by setting max-height to 0 */
+    overflow: hidden; /* Prevents content from overflowing */
+    background: #000000; /* Different color for menu */
+    transition: max-height 0.15s ease-in; /* Smooth transition for expanding/collapsing */
+}
+
+/* Visual feedback on hover for each menu item */
+.menu-items li:hover {
+    opacity: 0.5; /* Reduces opacity for a hover effect */
+}
+
+/* Style for the menu icon */
+.menu-icon {
+    display: none; /* Hide by default */
+    cursor: pointer;
+    position: absolute; /* Position the icon absolutely within the nav */
+    right: 10vw; /* 10px from the right, adjust as needed */
+    background: #000000;
+}
+
+/* Hover effect for the menu icon for visual feedback */
+.menu-icon-img:hover {
+    opacity: 0.5; /* Reduces opacity when hovered */
+}
+
+/* Defines size and appearance of the menu icon */
+.menu-icon-img {
+    width: 8vw; /* Width relative to the viewport */
+    height: 4vh; /* Height relative to the viewport */
+}
+
+/* Removes default list styling for menu items */
+.menu-icon ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Resets padding */
+}
+
+/* Styles links within the menu icon y */
+.menu-icon a {
+    display: block; /* Makes each link fill its container */
+    padding: 10px; /* Adds padding for visual space and touch targets */
+    text-decoration: none; /* Removes underline from links */
+    color: #ffffff; /* Sets link color to white for visibility */
+}
+
+/* Styles the label for the menu icon */
+.menu-icon label {
+    display: block; /* Makes the label fill its container */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    right: 10vw; /* 10px from the right, adjust as needed */
+}
+
+/* Hides the checkbox input */
+input#menu {
+    display: none; /* Hides the checkbox */
+}
+
+/* toggle effect */
+input:checked ~ .menu-items {
+    max-height: 100vh; /* Expands the menu to full viewport height */
+    transition: max-height 0.4s ease-in; /* Smooth transition for expanding/collapsing */
+}
+
+/* Media query for screen sizes less than 650px */
+@media screen and (max-width: 650px) {
+    /* Hide the links in navbar-right */
+    .navbar-right {
+        display: none; /* Hide the right section of the navbar */
+    }
+
+    /* Show the menu icon */
+    .menu-icon {
+        display: block; /* Show the menu icon */
+    }
+}

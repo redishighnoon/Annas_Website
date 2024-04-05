@@ -1,0 +1,15 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<div class="feedback-container">
+    <h1>Feedback Received</h1>
+    {% for entry in feedback %}
+        <div class="feedback-entry">
+            <h3>{{ entry['name'] }}</h3>
+            <p>{{ entry['comment'] }}</p>
+        </div>
+    {% else %}
+        <p>No feedback has been submitted yet.</p>
+    {% endfor %}
+</div>
+{% endblock %}

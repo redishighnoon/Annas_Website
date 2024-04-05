@@ -1,0 +1,32 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<main>
+    <div class="description">
+        <h1>Below is a list of projects I worked on in CSE477:</h1>
+        <p> 
+            Click an image or hyperlink in the description to learn more. 
+        </p>
+    </div>
+    <div class="content-row">
+        <div class="photo-column">
+            <a href="{{ url_for('piano') }}">
+                <img src="{{ url_for('static', filename='main/images/piano.jpeg') }}" alt="Javascript Piano">
+            </a>
+        </div>
+        <div class="text-column">
+            <h1>Javascript Piano</h1>
+            <p> 
+                As part of my first Homework assignment in CSE477, I developed an interactive piano built
+                in pure HTML, CSS, and JavaScript. This tool (in addition to my webpage) highlights my ability to 
+                build beautiful and mobile-friendly front-end applications. 
+                <a href="{{ url_for('piano') }}">Click here to see, and play!</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="bottom-page">
+        <h1>More Coming soon!</h1>
+    </div>
+</main>
+{% endblock %}
