@@ -1,7 +1,6 @@
 /* Header styling with responsive background image */
 header {
     width: 100%; /* Ensures the header spans the full viewport width */
-    height: 10vh; /* Sets the header height relative to the viewport height */
-    background-image: url('../images/banner.jpg'); /* Background image for the header */
-    background-size: cover; /* Covers the header area without distorting the image */
+    height: 20vh; /* Sets the header height relative to the viewport height */
+    background-image: url('../images/banner.png'); /* Background image for the header */
 }
