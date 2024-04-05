@@ -1,10 +1,10 @@
-# Author  : Prof. MM Ghassemi <ghassem3@msu.edu>
+# Author  : Alan Fierro <alanfierro33@gmail.com>
 
 version: "3.8"
 services:
   # A user-defined name for this container
   flask-app:
-    container_name: hw3-container_flask-app
+    container_name: annawebsite-container_flask-app
     # Indicates that `Dockerfile-dev` should be used for local instantiations
     build:
         context: .
