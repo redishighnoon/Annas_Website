@@ -1,0 +1,50 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<main>
+    <div class="content-row">
+        <div class="photo-column">
+            <img src="../static/main/images/Website.png">
+        </div>
+        <div class="text-column">
+            <h1>Project 1</h1>
+            <p> 
+                As part of my first Homework assignment in CSE477, I developed an interactive piano built
+                in pure HTML, CSS, and JavaScript. This tool (in addition to my webpage) highlights my ability to 
+                build beautiful and mobile-friendly front-end applications. 
+            </p>
+        </div>
+    </div>
+
+    <div class="bottom-page"></div>
+
+    <div class="content-row">
+        <div class="photo-column">
+            <img src="../static/main/images/Website.png">
+        </div>
+        <div class="text-column">
+            <h1>Project 2</h1>
+            <p> 
+                As part of my first Homework assignment in CSE477, I developed an interactive piano built
+                in pure HTML, CSS, and JavaScript. This tool (in addition to my webpage) highlights my ability to 
+                build beautiful and mobile-friendly front-end applications. 
+            </p>
+        </div>
+    </div>
+
+    <div class="contact-links">
+        <a href="https://www.instagram.com/annaaphan/" target="_blank" class="contact-link-small">
+          <img src="{{ url_for('static', filename='main/images/instagram_icon.png') }}" alt="Instagram">
+        </a>
+        <a href="https://Linkedin.com/in/phannav" target="_blank" class="contact-link-small">
+          <img src="{{ url_for('static', filename='main/images/social-linkedin.png') }}" alt="LinkedIn">
+        </a>
+        <a href="mailto:Phan.annavo@gmail.com" class="contact-link-small">
+          <img src="{{ url_for('static', filename='main/images/mail-logo.jpg') }}" alt="Email">
+        </a>
+        <a href="https://www.tiktok.com/@annaaphan?_t=8lQScYPhHpK&_r=1" target="_blank" class="contact-link-small">
+            <img src="{{ url_for('static', filename='main/images/tiktok-logo-icon.png') }}" alt="TikTok">
+          </a>
+      </div>
+</main>
+{% endblock %}

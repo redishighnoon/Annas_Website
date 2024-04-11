@@ -20,11 +20,19 @@
   </div>
 </div>
 
-<div class="bottom-page">
-  <h1>A fun fact about me:</h1>
-  <p>
-      I love to draw! I find that it's a great way to relax and express my creativity.
-  </p>
+<div class="contact-links">
+  <a href="https://www.instagram.com/annaaphan/" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/instagram_icon.png') }}" alt="Instagram">
+  </a>
+  <a href="https://Linkedin.com/in/phannav" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/social-linkedin.png') }}" alt="LinkedIn">
+  </a>
+  <a href="mailto:Phan.annavo@gmail.com" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/mail-logo.jpg') }}" alt="Email">
+  </a>
+  <a href="https://www.tiktok.com/@annaaphan?_t=8lQScYPhHpK&_r=1" target="_blank" class="contact-link-small">
+      <img src="{{ url_for('static', filename='main/images/tiktok-logo-icon.png') }}" alt="TikTok">
+    </a>
 </div>
 {% endblock %}
 

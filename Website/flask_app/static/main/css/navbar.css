@@ -1,8 +1,8 @@
 /* General styling for the navigation bar */
 nav {
-    height: 10vh; /* Sets a relative height based on the viewport */
+    height: auto; /* Sets a relative height based on the viewport */
     width: 100%; /* Ensures the navbar spans the full width of the viewport */
-    background-color: #000000; /* Applies a black background for contrast */
+    background-color: #ffffff; /* Applies a black background for contrast */
     display: flex; /* Enables Flexbox */
     justify-content: space-between; /* Distributes space between items, pushing them to the edges */
     align-items: center; /* Vertically centers the content within the navbar */
@@ -10,18 +10,20 @@ nav {
 
 /* Styling for the left section of the navbar */
 .navbar-left {
-    margin-left: 5%; /* Adds space to the left of the links */
+    margin-top: 50px;
+    margin-left: 50px; /* Adds space to the left of the links */
 }
 
 /* Styling for navbar links in the left section */
 .navbar-left a {
-    color: #ffffff; /* Sets text color to white for visibility against the dark background */
-    font-size: 1.5vh; /* Adapts font size relative to the viewport width for scalability */
-    font-family: "Arial"; /* Uses Arial */
+    color: #000000; /* Sets text color to white for visibility against the dark background */
+    font-size: 10vh; /* Adapts font size relative to the viewport width for scalability */
+    font-family: 'Great Vibes', cursive;
 }
 
 /* Navbar-right styling */
 .navbar-right {
+    margin-top: 50px;
     display: flex; /* Use Flexbox */
     align-items: center; /* Centers content vertically */
     margin-left: auto; /* Pushes it to the right */
@@ -29,9 +31,9 @@ nav {
 
 /* Customizes the appearance of links within the navbar-right section */
 .navbar-right a {
-    color: #ffffff; /* Ensures text is white for readability */
-    font-size: 1.5vh; /* Sets font size to be slightly smaller than navbar-left links */
-    font-family: "Arial"; /* Uses Arial */
+    color: #000000; /* Ensures text is white for readability */
+    font-size: 2vh; /* Sets font size to be slightly smaller than navbar-left links */
+    font-family: 'EB Garamond', serif;
     text-decoration: none; /* Removes underline from links for a cleaner look */
     margin-right: 2vw; /* Adds spacing between individual links */
 }
@@ -53,10 +55,13 @@ nav {
     position: absolute; /* Positions the menu relative to its parent container */
     max-height: 0; /* Initially hidden by setting max-height to 0 */
     overflow: hidden; /* Prevents content from overflowing */
-    background: #000000; /* Different color for menu */
+    background: #ffffff; /* Different color for menu */
     transition: max-height 0.15s ease-in; /* Smooth transition for expanding/collapsing */
 }
 
+.menu-items a {
+    font-family: 'EB Garamond', serif;
+}
 /* Visual feedback on hover for each menu item */
 .menu-items li:hover {
     opacity: 0.5; /* Reduces opacity for a hover effect */
@@ -64,11 +69,12 @@ nav {
 
 /* Style for the menu icon */
 .menu-icon {
+    margin-top: 50px; /* Adds space above the menu icon */
     display: none; /* Hide by default */
     cursor: pointer;
     position: absolute; /* Position the icon absolutely within the nav */
     right: 10vw; /* 10px from the right, adjust as needed */
-    background: #000000;
+    background: #ffffff;
 }
 
 /* Hover effect for the menu icon for visual feedback */
@@ -78,9 +84,10 @@ nav {
 
 /* Defines size and appearance of the menu icon */
 .menu-icon-img {
-    width: 8vw; /* Width relative to the viewport */
-    height: 4vh; /* Height relative to the viewport */
+    width: 40px; /* Width relative to the viewport */
+    height: 40px; /* Height relative to the viewport */
 }
+
 
 /* Removes default list styling for menu items */
 .menu-icon ul {
@@ -93,7 +100,7 @@ nav {
     display: block; /* Makes each link fill its container */
     padding: 10px; /* Adds padding for visual space and touch targets */
     text-decoration: none; /* Removes underline from links */
-    color: #ffffff; /* Sets link color to white for visibility */
+    color: #000000; /* Sets link color to white for visibility */
 }
 
 /* Styles the label for the menu icon */
@@ -121,6 +128,9 @@ input:checked ~ .menu-items {
         display: none; /* Hide the right section of the navbar */
     }
 
+    .navbar-left a {
+        font-size: 50px; /* Adjust font size for scalability */
+    }
     /* Show the menu icon */
     .menu-icon {
         display: block; /* Show the menu icon */

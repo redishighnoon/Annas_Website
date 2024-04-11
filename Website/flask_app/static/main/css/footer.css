@@ -6,9 +6,10 @@ footer {
     justify-content: center; /* Centers content vertically */
     width: 100%; /* Ensures footer spans the entire width of the viewport */
     height: 5vh; /* Sets a relative height based on the viewport size */
-    background-color: #C3C2C2; /* Subtle gray background */
+    background-color: #ffffff; /* Subtle gray background */
 }
 
 .footer-container p {
     font-size: 1rem; 
+    font-family: 'EB Garamond', serif;
 }

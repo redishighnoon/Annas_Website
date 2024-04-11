@@ -1,0 +1,44 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<div class="content-row">
+  <div class="photo-column">
+      <img src="../static/main/images/anna_profile.jpg">
+  </div>
+  <div class="text-column">
+      <h1>About</h1>
+      <p> 
+        Hi there! I'm Anna, a Sacramento girl with a soul that's always been a bit too big for any one place to contain. Ever since I was young, California has been my playground. I've roamed from its northern forests, shrouded in fog, to its southern shores, kissed by the sun, and every adventure seemed to whisper, "There's so much more out there."
+      </p>
+      <p>
+        I took that whisper to heart. I've found my calling not just in the colors and shapes that dance across my canvas, but in the stories that each stroke tells about the places I've seen and the people I've met. This is a step into my storybook, where the past and present hug each other like long lost friends. Everywhere I looked, there was something to fill me with wonder, from the ancient temples whispering old tales to the bustling streets echoing with new ones. It was a place where every corner offered a new story, and I just couldn't soak it up fast enough. 
+      </p>
+      <p>
+        Art for me is more than just making something beautiful; it's my way of capturing the essence of my travels and the connections I've made along the way. Freelancing back home in Sacramento, every project is a new journey, a chance to share a piece of my story with the world.
+      </p>
+      <p>
+        But it's not just through my art that I share these stories. My blog is my open diary, a place where I can take you by the hand and show you the world as I see it. From the cozy cafes in hidden alleys to the breathtaking vistas that make you pause and reflect, I pour my discoveries, my lessons, and yes, my heart into each post and itinerary. It's here that I get to be your friend, your travel buddy, and maybe, your inspiration to step out and explore this beautiful, vast world of ours.
+      </p>
+      <p>
+        So join me, won't you? Let's dive into this adventure together, one post, one painting, and one journey at a time. Here's to all the places we'll go and the stories we'll tell. Let's make it unforgettable!
+      </p>
+  </div>
+</div>
+
+<div class="contact-links">
+  <a href="https://www.instagram.com/annaaphan/" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/instagram_icon.png') }}" alt="Instagram">
+  </a>
+  <a href="https://Linkedin.com/in/phannav" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/social-linkedin.png') }}" alt="LinkedIn">
+  </a>
+  <a href="mailto:Phan.annavo@gmail.com" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/mail-logo.jpg') }}" alt="Email">
+  </a>
+  <a href="https://www.tiktok.com/@annaaphan?_t=8lQScYPhHpK&_r=1" target="_blank" class="contact-link-small">
+      <img src="{{ url_for('static', filename='main/images/tiktok-logo-icon.png') }}" alt="TikTok">
+    </a>
+</div>
+{% endblock %}
+
+

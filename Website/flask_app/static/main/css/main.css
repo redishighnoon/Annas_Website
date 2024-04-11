@@ -14,35 +14,32 @@ main {
 
 /* Style for rows within the content area */
 .content-row {
-    margin-top: 5vh; /* Adds vertical space between the header and this content row */
-    display: flex; /* Enables Flexbox */
-    height: 50vh; /* Sets a fixed height relative to the viewport */
-    width: 80vw; /* Constrains width to a portion of the viewport width */
-    margin-bottom: 9.99vh; /* Adds vertical space between the content and the footer */
+    display: flex; /* This is crucial */
+    width: 80%; /* Or your desired width */
+    margin: auto; /* Center the row if needed */
+    align-items: stretch; /* This will make the children stretch to fill the container */
 }
 
-/* styling for both photo and text columns */
+
 .photo-column, .text-column {
-    flex: 1; /* Assigns equal flex-grow value, allowing these columns to share available space equally */
-    display: flex; /* Enables Flexbox */
-    justify-content: center; /* Centers children elements horizontally */
-    align-items: center; /* Centers children elements vertically */
-    flex-direction: column; /* Stacks children elements vertically */
+    flex: 1; /* This allows them to grow and take up available space equally */
 }
 
 /* Specific styling for the photo column */
 .photo-column {
-    max-width: 100%; /* Ensures the column does not exceed the parent width */
-    max-height: 100%; /* Ensures the column does not exceed a certain height */
-    overflow: hidden; /* Hides any overflow, ensuring content does not escape the bounds */
+    margin-top: 50px; /* Add space above the column */
 }
+
+
 
 /* Specific styling for images within the photo column */
 .photo-column img {
-    width: 100%; /* Limit width to prevent overflow */
-    height: 100%; /* Full height of the column */
-    object-fit: cover; /* Covers the area without distortion */
+
+    width: auto; /* Let the image's width be dictated by its natural size */
+    max-width: 100%; /* Ensure image is not stretched wider than its container */
+    height: auto; /* Maintain the image's aspect ratio */
 }
+
 
 /* text column to manage content overflow and alignment */
 .text-column {
@@ -51,7 +48,18 @@ main {
     flex-direction: column; /* Stacks children elements vertically */
     justify-content: flex-start; /* Aligns children (text) to the start of the flex container */
     align-items: center; /* Centers items horizontally */
-    margin-left: 1vw; /* Add space between the columns */
+    margin-left: 50px; /* Add space between the columns */
+}
+
+.text-column h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 4vh;
+    font-weight: normal;
+}
+
+.text-column p {
+    font-family: 'EB Garamond', serif;
+    font-size: 2vh;
 }
 
 /* Responsive design adjustments for smaller screens */

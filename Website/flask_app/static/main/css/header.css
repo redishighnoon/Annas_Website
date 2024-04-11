@@ -1,6 +1,8 @@
-/* Header styling with responsive background image */
 header {
-    width: 100%; /* Ensures the header spans the full viewport width */
-    height: 20vh; /* Sets the header height relative to the viewport height */
-    background-image: url('../images/banner.png'); /* Background image for the header */
+    width: 100%;
+    height: 250px;
+    background-image: 
+        linear-gradient(to bottom, rgba(255,255,255,0) -10%, rgba(255,255,255,1) 100%), /* White gradient */
+        url('../images/banner.png'); 
+        background-position: bottom 10%;
 }
