@@ -1,0 +1,61 @@
+.photo-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%
+}
+
+.photo-container {
+    margin: 0 10px; /* Spacing between photos */
+    position: relative;
+    flex-basis: calc(33.333% - 20px); /* Adjust based on spacing, for 3 images per row */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content (if needed) */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+    cursor: pointer; /* Changes the cursor to indicate the item is clickable */
+}
+.photo-container:hover {
+    transform: scale(1.05); /* Scales up the container by 5% on hover */
+}
+
+.photo-container img {
+    width: 80%;
+    height: auto;
+    display: block;
+}
+
+.photo-caption {
+    width: 15vw;
+    height: 6vw;
+    font-family: 'EB Garamond', serif;
+    font-size: 2vw; /* Larger font size for the caption */
+    font-weight: bold; /* Makes all text within bold */
+    position: absolute;
+    bottom: -5%; /* Positioned at the bottom of the photo-container */
+    left: 50%; /* Center the caption horizontally */
+    transform: translateX(-50%); /* Offset by half the width of the caption for true centering */
+    background: white; /* Fully opaque white background */
+    padding: 2% 5%; /* Increase padding to make the caption longer */
+    display: flex;
+    flex-direction: column; /* Stack location and country vertically */
+    align-items: center; /* Center the text lines */
+    max-width: 70%; /* Maximum width of the caption to avoid overflowing */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, color */
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+.country-name {
+    font-size: 1vw; /* Smaller font size for country name */
+    color: #666; /* Grey color for less emphasis */
+    padding-top: 2px; /* Spacing between city and country */
+}
+
+.location-icon {
+    margin-right: 5px;
+}
+
+.location-name {
+    font-weight: bold;
+    font-size: 1.5vw; /* Larger font size for city name */
+    color: #333;
+}

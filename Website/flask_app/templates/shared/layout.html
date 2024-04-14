@@ -4,55 +4,64 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anna Phan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=EB+Garamond:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='main/css/main.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='main/css/header.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='main/css/navbar.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='main/css/footer.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='main/css/login.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='main/css/travel.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='main/css/about.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='main/css/home.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='main/css/contact.css') }}">
   <link rel="shortcut icon" href="{{ url_for('static', filename='main/images/favicon.ico') }}">
 </head>
 
 <body>
-  <header></header>
-
-  <nav>
-    <div class="menu-icon">
-      <input type="checkbox" id="menu"/>
-      <label for="menu">
-      <img src="../static/main/images/menu-bar.png" class="menu-icon-img"/>
-      </label>
-      <div class="menu-items">
-          <ul>
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="{{ url_for('travel') }}">Travel</a></li>
-            <li><a href="{{ url_for('projects') }}">Art</a></li>
-            <li><a href="{{ url_for('about') }}">About</a></li>
-            <li><a href="https://www.mercari.com/u/613576771?sv=0" target="_blank">Shop</a></li>
-            <li><a href="{{ url_for('contact') }}">Contact</a></li>
-          </ul>
-      </div>
+  <header>
+    <div class="header-content">
+      Anna's Artventures
     </div>
-
-    <div class="navbar-left">
-      <a>Anna Phan</a>
-    </div>
-
-    <div class="navbar-right">
+  </header>
+  <main>
+    <nav>
+      <div class="navbar">
         <a href="{{ url_for('home') }}">Home</a>
-        <a href="{{ url_for('travel') }}">Travel</a>
+  
+  
+        <!-- Dropdown for Travel -->
+        <div class="dropdown">
+          <a>Travel</a> <!-- Non-clickable placeholder -->
+          <div class="dropdown-content">
+              <!-- Dropdown Menu for Korea -->
+              <div class="dropdown-submenu">
+                  <span class="dropdown-label">Korea</span> <!-- Non-clickable label for Korea -->
+                  <div class="dropdown-content-submenu">
+                      <a href="{{ url_for('seoul') }}">Seoul</a>
+                      <a href="{{ url_for('jeju') }}">Jeju</a>
+                      <a href="{{ url_for('busan') }}">Busan</a>
+                      <!-- More cities can be added here -->
+                  </div>
+              </div>
+              <!-- Dropdown Menu for USA -->
+              <div class="dropdown-submenu">
+                  <span class="dropdown-label">USA</span> <!-- Non-clickable label for USA -->
+                  <div class="dropdown-content-submenu">
+                      <a href="{{ url_for('newyork') }}">New York</a>
+                      <a href="{{ url_for('losangeles') }}">Los Angeles</a>
+                      <!-- More cities can be added here -->
+                  </div>
+              </div>
+              <!-- Additional countries and their cities can follow the same pattern -->
+          </div>
+        </div>
+  
+        
         <a href="{{ url_for('projects') }}">Art</a>
         <a href="{{ url_for('about') }}">About</a>
         <a href="https://www.mercari.com/u/613576771?sv=0" target="_blank">Shop</a>
         <a href="{{ url_for('contact') }}">Contact</a>
-    </div>
-  </nav>
+      </div>
+    </nav>
 
-  <main>
     {% block maincontent %}{% endblock %}
   </main>
 

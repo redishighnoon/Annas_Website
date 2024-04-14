@@ -1,0 +1,62 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<div class="content-row-travel">
+    <div class="photo-column-travel">
+        <img src="../../../static/main/images/LA/anna_travel5.jpg">
+        <img src="../../../static/main/images/LA/anna_travel2.jpg">
+        <img src="../../../static/main/images/LA/anna_travel3.jpg">
+        <img src="../../../static/main/images/LA/anna_travel4.jpg">
+        <img src="../../../static/main/images/LA/anna_travel1.jpg">
+        <img src="../../../static/main/images/LA/anna_eat1.jpg">
+        <img src="../../../static/main/images/LA/anna_eat2.jpg">
+        <img src="../../../static/main/images/LA/anna_eat3.jpg">
+        <img src="../../../static/main/images/LA/anna_eat4.jpg">
+        <img src="../../../static/main/images/LA/anna_eat5.jpg">
+        <img src="../../../static/main/images/LA/anna_eat6.jpg">
+        <img src="../../../static/main/images/LA/anna_eat7.jpg">
+        <img src="../../../static/main/images/LA/anna_eat8.jpg">
+        <img src="../../../static/main/images/LA/anna_eat9.jpg">
+        <img src="../../../static/main/images/LA/anna_eat10.jpg">
+    </div>
+    <div class="text-column-travel">
+
+    <div class="title-area-travel">
+        <h1>THE BEGINNING OF IT ALL</h1>
+        <h2>⚲ Los Angeles, California</h2>
+        <div class="link-container">
+            <a href="{{ url_for('static', filename='main/pdf-documents/USA-pdf/Los_Angeles_.pdf') }}" class="download-link" download>Itinerary</a>
+            <span class="link-separator">|</span>
+            <a href="{{ url_for('static', filename='main/pdf-documents/USA-pdf/LA_eats_that_Ive_tried_.pdf') }}" class="download-link" download>LA Eats</a>
+        </div>
+    </div>
+    
+    <p class="paragraph-travel"> 
+        Driving along the Pacific Coast from Highway 1 in Big Sur to Los Angeles, I went on a journey that marked the beginning of it all, where my travels and art inspirations truly came into play. My first road trip in 2017, stepping outside my comfort zone, allowed me to see California for what it really is, a place of vibrant life and creative inspiration. LA, my special getaway, always calling me with promises of fun and delicious discoveries. It's always been a six-hour drive from my sweet town, but it feels like a whole new world with LA's lively city and endless options.
+    </p>
+    <p class="paragraph-travel"> 
+        As I stroll down the palm-lined streets, the sight of the Hollywood sign against the bright sky makes me smile. LACMA's twinkling lights tell stories of art and dreams, and the Griffith Observatory offers a peaceful escape under the stars. But it's the food that really steals my heart. From the cozy Korean BBQ joints like Ha Jang Chon to the cozy Filipino spots and the comforting Vietnamese eateries, each meal is a journey of flavors and memories. And when I need a break from the city buzz, Laguna Beach welcomes me with open arms, its serene shores offering a peaceful retreat. And let's not forget the sweet delights of the local dessert spots, where every bite feels like a hug.
+    </p>
+    <p class="paragraph-travel"> 
+        LA, you're more than just a city, you're my happy place, filled with warmth and excitement. Until next time, I'll hold onto the memories of our adventures together, like cherished notes in a favorite journal. 
+    </p>
+  </div>
+</div>
+
+<div class="contact-links">
+  <a href="https://www.instagram.com/annaaphan/" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/instagram_icon.png') }}" alt="Instagram">
+  </a>
+  <a href="https://Linkedin.com/in/phannav" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/social-linkedin.png') }}" alt="LinkedIn">
+  </a>
+  <a href="mailto:Phan.annavo@gmail.com" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/mail-logo.jpg') }}" alt="Email">
+  </a>
+  <a href="https://www.tiktok.com/@annaaphan?_t=8lQScYPhHpK&_r=1" target="_blank" class="contact-link-small">
+      <img src="{{ url_for('static', filename='main/images/tiktok-logo-icon.png') }}" alt="TikTok">
+    </a>
+</div>
+{% endblock %}
+
+

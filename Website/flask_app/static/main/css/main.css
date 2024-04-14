@@ -4,7 +4,11 @@ body {
 }
 /* Main content area */
 main {
-    background-color: white; /* Set the background color to white */
+    background-image: url('../images/background.jpg'); /* Set the background image */
+    background-color: rgba(255, 255, 255, 0.5); /* Use a semi-transparent white background */
+    background-blend-mode: lighten; /* Blend the image and color */
+    background-size: auto; /* Change from 'cover' to 'auto' */
+    background-repeat: repeat; /* Ensures the background image repeats */
     width: 100%; /* Adjust this to the desired width */
     height: auto; /* Adjust this to the desired height */
     display: flex; /* Use Flexbox */
@@ -34,7 +38,6 @@ main {
 
 /* Specific styling for images within the photo column */
 .photo-column img {
-
     width: auto; /* Let the image's width be dictated by its natural size */
     max-width: 100%; /* Ensure image is not stretched wider than its container */
     height: auto; /* Maintain the image's aspect ratio */

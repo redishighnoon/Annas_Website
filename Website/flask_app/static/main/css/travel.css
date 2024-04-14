@@ -1,0 +1,138 @@
+
+/* Style for rows within the content area */
+.content-row-travel {
+    display: flex; /* This is crucial */
+    width: 80%; /* Or your desired width */
+    margin-top: 100px;
+    align-items: stretch; /* This will make the children stretch to fill the container */
+}
+
+
+.photo-column-travel, .text-column-travel {
+    flex: 1; /* This allows them to grow and take up available space equally */
+}
+
+/* Specific styling for the photo column */
+.photo-column-travel .text-column-travel {
+    margin-top: 50px; /* Add space above the column */
+}
+
+.photo-column-travel {
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images horizontally */
+    width: 100%; /* Ensure the column takes the full width */
+}
+
+/* Specific styling for images within the photo column */
+.photo-column-travel img {
+    width: auto; /* Let the image's width be dictated by its natural size */
+    max-width: 80%; /* Ensure image is not stretched wider than its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    margin-bottom: 10px; /* Adds space between stacked images */
+}
+
+
+.text-column-travel {
+    overflow-y: auto; /* Allows vertical scrolling */
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stacks children elements vertically */
+    justify-content: flex-start; /* Aligns children (text) to the start of the flex container */
+    align-items: center; /* Centers items horizontally */
+    margin-left: 50px; /* Add space between the columns */
+    position: sticky; /* Make the column sticky */
+    top: 20px; /* Distance from the top of the viewport before sticking */
+    height: calc(100vh - 40px); /* Optional: adjust height based on viewport */
+    z-index: 10; /* Ensures it stays on top of other content */
+}
+
+
+.text-column-travel .paragraph-travel{
+    background-color: rgba(255, 255, 255, 0.7); /* White with 80% opacity */
+    padding: 20px; /* Adjust padding as needed */
+    margin-bottom: 20px; /* Add margin between paragraphs */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.title-area-travel{
+    background-color: rgba(255, 255, 255, 0.7); /* White with 80% opacity */
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stacks children elements vertically */
+    justify-content: center; /* Centers content vertically in the container */
+    align-items: center; /* Centers content horizontally in the container */
+}
+
+/* New container for links */
+.links-container {
+    display: flex;
+    width: 100%; /* Takes full width of title-area-travel */
+    justify-content: space-between; /* Places children at the far ends */
+    align-items: center; /* Aligns items horizontally at the center */
+}
+
+.text-column-travel h1 {
+    font-family: 'EB Garamond', sans-serif;
+    font-size: clamp(40px, 2vw, 60px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
+    font-weight: normal;
+    padding: 10px 10px 0 10px; /* Top, right, bottom, and left padding */
+    text-align: center; /* Centers the text horizontally */
+    margin-bottom: 0; /* Removes default margin at the bottom */
+}
+
+.text-column-travel h2 {
+    padding: 10px; /* Adjust padding as needed */
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(15px, 1.5vw, 22px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
+    font-weight: normal;
+    margin-bottom: 0; /* Removes default margin at the bottom */
+    margin-top: 0; /* Removes default margin at the top */
+}
+
+.text-column-travel p {
+    font-family: 'EB Garamond', sans-serif;
+    font-size: clamp(15px, 2vw, 27px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
+}
+
+.download-link {
+    display: inline-block; /* Ensures links are displayed inline */
+    padding: 8px 16px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Removes underline */
+    color: #000;
+    font-size: clamp(12px, 1vw, 20px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal; /* Makes the font bold */
+}
+
+.link-separator {
+    color: #000000; /* Same color as your links or as needed */
+    margin: 0 10px; /* Adds horizontal spacing around the separator */
+    font-size: 16px; /* Ensure it matches the size of the links or adjust as needed */
+    display: inline-flex; /* Helps in aligning it vertically with the links */
+    align-items: center; /* Centers it vertically relative to the links */
+}
+
+.download-link:hover {
+    opacity: 0.5; /* Adjust as needed */
+}
+
+/* Responsive design adjustments for smaller screens */
+@media screen and (max-width: 650px) {
+    .content-row-travel {
+        flex-direction: column-reverse;
+        height: auto; /* Remove fixed height */
+    }
+
+    .photo-column-travel {
+        display: flex; /* Enable Flexbox for this container */
+        align-items: center; /* Center content vertically, useful if you have height */
+        width: 100%; /* Ensure it spans the full width of its container */
+    }
+
+    .text-column-travel {
+        position: static; /* Resets to default positioning */
+        overflow: visible; /* Make text overflow visible */
+        margin-left: 0; /* Remove left margin */
+        top: auto; /* Remove any set distance from the top used for sticky positioning */
+    }
+}

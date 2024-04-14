@@ -4,7 +4,7 @@ from werkzeug.datastructures   import ImmutableMultiDict
 from pprint import pprint
 import random
 #######################################################################################
-# OTHER
+# MAIN
 #######################################################################################
 @app.route('/')
 def root():
@@ -26,6 +26,31 @@ def about():
 def projects():
     return render_template('projects.html')
 
+#######################################################################################
+# TRAVEL
+#######################################################################################
 @app.route('/travel')
 def travel():
     return render_template('travel.html')
+
+# Routes for the individual cities in Korea
+@app.route('/Places_Traveled/Korea/seoul')
+def seoul():
+    return render_template('Places_Traveled/Korea/seoul.html')
+
+@app.route('/Places_Traveled/Korea/jeju')
+def jeju():
+    return render_template('Places_Traveled/Korea/jeju.html')
+
+@app.route('/Places_Traveled/korea/busan')
+def busan():
+    return render_template('Places_Traveled/Korea/busan.html')
+
+# Routes for cities in the USA can be added in a similar fashion
+@app.route('/Places_Traveled/USA/newyork')
+def newyork():
+    return render_template('Places_Traveled/USA/newyork.html')
+
+@app.route('/Places_Traveled/USA/losangeles')
+def losangeles():
+    return render_template('Places_Traveled/USA/losangeles.html')
