@@ -6,7 +6,7 @@ footer {
     justify-content: center; /* Centers content vertically */
     width: 100%; /* Ensures footer spans the entire width of the viewport */
     height: 5vh; /* Sets a relative height based on the viewport size */
-    background-color: #ffffff; /* Subtle gray background */
+    background-color: rgba(255, 255, 255, 0.7); /* White with 80% opacity */
 }
 
 .footer-container p {

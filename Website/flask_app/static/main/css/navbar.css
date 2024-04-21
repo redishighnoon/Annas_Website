@@ -39,8 +39,7 @@ nav {
 
 /* Style for non-clickable country label */
 .dropdown-label {
-    display: block;
-    margin-top: 30px;
+    display: block; /* Each label takes up the full width of the container */
     margin-bottom: 30px;
     padding: 0px 14px; /* top, right, bottom, left padding */
     color: #2e2e2e; /* Color of the country label text */
@@ -108,9 +107,4 @@ nav {
     opacity: 1; /* Fade in to full visibility */
     visibility: visible; /* Make the submenu visible */
     transition-delay: 0s, 0s; /* No delay when showing the submenu */
-}
-
-/* Change background color on hover for second-level dropdown links */
-.dropdown-content-submenu a:hover {
-    background-color: #f1f1f1;
 }

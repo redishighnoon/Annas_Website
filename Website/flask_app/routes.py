@@ -47,10 +47,30 @@ def busan():
     return render_template('Places_Traveled/Korea/busan.html')
 
 # Routes for cities in the USA can be added in a similar fashion
-@app.route('/Places_Traveled/USA/newyork')
-def newyork():
-    return render_template('Places_Traveled/USA/newyork.html')
+@app.route('/Places_Traveled/USA/deathvalley')
+def deathvalley():
+    return render_template('Places_Traveled/USA/deathvalley.html')
 
 @app.route('/Places_Traveled/USA/losangeles')
 def losangeles():
     return render_template('Places_Traveled/USA/losangeles.html')
+
+@app.route('/Places_Traveled/Iceland/Reykjavik')
+def Reykjavik():
+    return render_template('Places_Traveled/Iceland/Reykjavik.html')
+
+@app.route('/Places_Traveled/USA/Oahu')
+def oahu():
+    return render_template('Places_Traveled/USA/oahu.html')
+
+@app.route('/Places_Traveled/Mexico/Guanajuato')
+def guanajuato():
+    return render_template('Places_Traveled/Mexico/guanajuato.html')
+
+@app.route('/Places_Traveled/USA/Michigan')
+def michigan():
+    return render_template('Places_Traveled/USA/michigan.html')
+
+@app.route('/Places_Traveled/Philippines/Palawan')
+def palawan():
+    return render_template('Places_Traveled/Philippines/Palawan/palawan.html')

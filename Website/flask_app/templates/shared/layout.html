@@ -45,11 +45,38 @@
               <div class="dropdown-submenu">
                   <span class="dropdown-label">USA</span> <!-- Non-clickable label for USA -->
                   <div class="dropdown-content-submenu">
-                      <a href="{{ url_for('newyork') }}">New York</a>
+                      <a href="{{ url_for('deathvalley') }}">Death Valley</a>
                       <a href="{{ url_for('losangeles') }}">Los Angeles</a>
+                      <a href="{{ url_for('oahu') }}">Hawaii</a>
+                      <a href="{{ url_for('michigan') }}">Michigan</a>
                       <!-- More cities can be added here -->
                   </div>
               </div>
+              <!-- Dropdown Menu for Iceland -->
+              <div class="dropdown-submenu">
+                <span class="dropdown-label">Iceland</span> <!-- Non-clickable label for USA -->
+                <div class="dropdown-content-submenu">
+                    <a href="{{ url_for('Reykjavik') }}">Reykjavik</a>
+                    <!-- More cities can be added here -->
+                </div>
+            </div>
+            <!-- Dropdown Menu for Philippines -->
+            <div class="dropdown-submenu">
+              <span class="dropdown-label">Philippines</span> <!-- Non-clickable label for Korea -->
+              <div class="dropdown-content-submenu">
+                  <a href="{{ url_for('palawan') }}">Palawan</a>
+                  <!-- More cities can be added here -->
+              </div>
+            </div>
+            <!-- Dropdown Menu for Mexico -->
+            <div class="dropdown-submenu">
+              <span class="dropdown-label">Mexico</span> <!-- Non-clickable label for Korea -->
+              <div class="dropdown-content-submenu">
+                  <a href="{{ url_for('guanajuato') }}">Guanajuato</a>
+                  <!-- More cities can be added here -->
+              </div>
+            </div>
+
               <!-- Additional countries and their cities can follow the same pattern -->
           </div>
         </div>
@@ -63,13 +90,14 @@
     </nav>
 
     {% block maincontent %}{% endblock %}
+
+    <footer>
+      <div class="footer-container">
+        <p>© 2024 Anna's Artventures</p>
+      </div>
+    </footer>
   </main>
 
-  <footer>
-    <div class="footer-container">
-      <p>© 2024 Anna's Artventures</p>
-    </div>
-  </footer>
 </body>
 
 </html>

@@ -1,0 +1,60 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<div class="content-row-travel">
+    <div class="photo-column-travel">
+        <img src="../../../static/main/images/Iceland/Reykjavik/rey-1.png">
+        <img src="../../../static/main/images/Iceland/Reykjavik/rey-2.png">
+        <img src="../../../static/main/images/Iceland/Reykjavik/rey-3.png">
+        <img src="../../../static/main/images/Iceland/Reykjavik/rey-4.png">
+        <img src="../../../static/main/images/Iceland/Reykjavik/rey-11.jpg">
+        <img src="../../../static/main/images/Iceland/Reykjavik/rey-6.png">
+        <img src="../../../static/main/images/Iceland/Reykjavik/rey-5.png">
+        <img src="../../../static/main/images/Iceland/Reykjavik/rey-10.jpg">
+        <img src="../../../static/main/images/Iceland/Reykjavik/rey-7.png">
+        <img src="../../../static/main/images/Iceland/Reykjavik/rey-8.png">
+        <img src="../../../static/main/images/Iceland/Reykjavik/rey-9.jpg">
+    </div>
+    <div class="text-column-travel">
+
+    <div class="title-area-travel">
+        <h1>WINTER IN ICELAND</h1>
+        <h2>⚲ Reykjavik, Iceland</h2>
+        <h3>December 13 2021</h3>
+        <div class="link-container">
+            <a href="{{ url_for('static', filename='main/pdf-documents/USA-pdf/dv.pdf') }}" class="download-link" download>Itinerary</a>
+        </div>
+    </div>
+    
+    <p class="paragraph-travel"> 
+        Come along with me on a wonderful journey to Iceland, where the promise of the Northern Lights danced in the sky, but the charm of the land stole the spotlight. Despite missing out on the auroras, every moment spent exploring this enchanting country was a delightful adventure. Hopefully you can catch it whenever you plan your journey!
+    </p>
+    <p class="paragraph-travel"> 
+        Opting for a cozy bus tour from Bus Stop 12 Höfðatorg, Þórunnartún was the perfect choice for braving Iceland's wintry storms. With safety as our trusty companion, we went on an approximately 8 hour tour, whisked away to some of the country's most iconic destinations.
+    </p>
+    <p class="paragraph-travel"> 
+        Our first stop transported us to the awe inspiring Thingvellir National Park, where the rugged beauty of the landscape captured my heart. Next, we ventured to the majestic Gullfoss Waterfall, its icy cascade glistening like a fairy's veil. Yet, it was the legendary Blue Lagoon that truly stole the show, a must see destination that was as dreamy as it was enchanting. Surrounded by the ethereal beauty of the landscape, I felt like I had stepped into a fairy tale.
+    </p>
+    <p class="paragraph-travel"> 
+        While the Northern Lights may have remained elusive, the memories made and the sights seen were simply magical. Iceland, with its natural wonders and warm hospitality, left me with a heart full of joy and a longing to return for more adventures. Until next time, Iceland takk fyrir (thank you) for the unforgettable journey!
+    </p>
+  </div>
+</div>
+
+<div class="contact-links">
+  <a href="https://www.instagram.com/annaaphan/" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/instagram_icon.jpg') }}" alt="Instagram">
+  </a>
+  <a href="https://Linkedin.com/in/phannav" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/social-linkedin.jpg') }}" alt="LinkedIn">
+  </a>
+  <a href="mailto:Phan.annavo@gmail.com" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/mail-logo.jpg') }}" alt="Email">
+  </a>
+  <a href="https://www.tiktok.com/@annaaphan?_t=8lQScYPhHpK&_r=1" target="_blank" class="contact-link-small">
+      <img src="{{ url_for('static', filename='main/images/tiktok-logo.jpg') }}" alt="TikTok">
+    </a>
+</div>
+{% endblock %}
+
+

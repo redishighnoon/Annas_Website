@@ -1,0 +1,62 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<div class="content-row-travel">
+    <div class="photo-column-travel">
+        <img src="../../../static/main/images/Korea/Busan/busan-1.jpeg">
+        <img src="../../../static/main/images/Korea/Busan/busan-2.jpeg">
+        <img src="../../../static/main/images/Korea/Busan/busan-3.jpg">
+        <img src="../../../static/main/images/Korea/Busan/busan-4.jpg">
+        <img src="../../../static/main/images/Korea/Busan/busan-5.jpg">
+        <img src="../../../static/main/images/Korea/Busan/busan-6.jpg">
+        <img src="../../../static/main/images/Korea/Busan/busan-7.jpg">
+        <img src="../../../static/main/images/Korea/Busan/busan-8.jpg">
+        <img src="../../../static/main/images/Korea/Busan/busan-9.jpg">
+        <img src="../../../static/main/images/Korea/Busan/busan-10.jpg">
+        <img src="../../../static/main/images/Korea/Busan/busan-11.jpg">
+        <img src="../../../static/main/images/Korea/Busan/busan-12.jpg">
+        <img src="../../../static/main/images/Korea/Busan/busan-13.jpg">
+    </div>
+    <div class="text-column-travel">
+
+    <div class="title-area-travel">
+        <h1>FROM SEOUL TO BUSAN</h1>
+        <h2>⚲ Busan, South Korea</h2>
+        <h3>April 27 2022</h3>
+        <div class="link-container">
+            <a href="{{ url_for('static', filename='main/pdf-documents/korea-pdf/Busan.pdf') }}" class="download-link" download>Itinerary</a>
+        </div>
+    </div>
+    
+    <p class="paragraph-travel"> 
+        Escaping the big city Seoul for Busan, I found myself truly discovering the beauty of the villages. From the moment I arrived, I was greeted with warmth and kindness from the people there, filling my heart with joy.
+    </p>
+    <p class="paragraph-travel"> 
+        Wandering through the streets of Busan, I couldn't help but be amazed by the breathtaking views that seemed to unfold around every corner. From Seokbulsa Mountain Temple to the vibrant Haeundae Beach, each destination was such natural beauty.
+    </p>
+    <p class="paragraph-travel"> 
+        But it wasn't just the scenery that made my time in Busan unforgettable; it was the people I met along the way. From friends I made at Yonsei University to the strangers who greeted me with smiles and open arms, the sense of community was so heartwarming. One of the highlights of my trip was exploring the colorful streets of Gamcheon Culture Village, where every corner seemed to hold a new surprise. And let's not forget the exhilarating ride on the Haeundae Blueline for panoramic views that took my breath away.
+    </p>
+    <p class="paragraph-travel">
+        As I reflect on my time in Busan, I can't help but feel grateful for the memories I've made and the friendships I've formed. It's a place that will always hold a special corner of my heart, reminding me that sometimes the most beautiful moments in life are found in the simplest of experiences.
+    </p>
+  </div>
+</div>
+
+<div class="contact-links">
+  <a href="https://www.instagram.com/annaaphan/" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/instagram_icon.jpg') }}" alt="Instagram">
+  </a>
+  <a href="https://Linkedin.com/in/phannav" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/social-linkedin.jpg') }}" alt="LinkedIn">
+  </a>
+  <a href="mailto:Phan.annavo@gmail.com" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/mail-logo.jpg') }}" alt="Email">
+  </a>
+  <a href="https://www.tiktok.com/@annaaphan?_t=8lQScYPhHpK&_r=1" target="_blank" class="contact-link-small">
+      <img src="{{ url_for('static', filename='main/images/tiktok-logo.jpg') }}" alt="TikTok">
+    </a>
+</div>
+{% endblock %}
+
+

@@ -1,0 +1,65 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<div class="content-row-travel">
+    <div class="photo-column-travel">
+        <img src="../../../static/main/images/USA/Oahu/oahu-1.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-2.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-3.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-3.5.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-4.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-5.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-6.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-8.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-9.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-10.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-11.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-12.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-13.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-14.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-15.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-16.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-17.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-18.jpg">
+        <img src="../../../static/main/images/USA/Oahu/oahu-19.jpg">
+    </div>
+    <div class="text-column-travel">
+
+    <div class="title-area-travel">
+        <h1>SUMMER IN OAHU</h1>
+        <h2>⚲ Oahu, Hawaii</h2>
+        <h3>July 05 2021</h3>
+        <div class="link-container">
+            <a href="{{ url_for('static', filename='main/pdf-documents/USA-pdf/Hawaii.pdf') }}" class="download-link" download>Itinerary</a>
+        </div>
+    </div>
+    
+    <p class="paragraph-travel"> 
+        Ah, Hawaii. A slice of paradise that stole my heart from the moment I arrived. From the moment I set foot on its shores, I knew this trip would be nothing short of magical. Let me take you on a journey through some of the highlights of my Hawaiian adventure, filled with beauty, wonder, and a whole lot of aloha spirit!
+    </p>
+    <p class="paragraph-travel"> 
+        Of course, no trip to Hawaii would be complete without a visit to Lanikai Beach, a true slice of heaven on earth. With its powdery white sands and turquoise waters, it's no wonder this beach is consistently ranked among the best in the world. And let's not forget about the food! Uncle Bobo’s Hawaiian Food and Shaved Ice shack stole my heart with its mouthwatering shaved ice treats, the perfect way to cool off after a day of exploring. And for the best photo souvenirs, Ka’a’awa Beach was the place to be, with its stunning vistas and picture perfect scenery. The most memorable experience of all was snorkeling with turtles, an encounter I'll cherish forever. There's something truly magical about swimming alongside these majestic creatures, feeling a sense of connection with the ocean and all its wonders.
+    </p>
+    <p class="paragraph-travel"> 
+        As I bid farewell to Hawaii, I couldn't help but feel a twinge of sadness at leaving behind such a beautiful place. But as the saying goes, "Aloha ʻoe, aloha ʻoe" until we meet again, Hawaii, mahalo for the memories!
+    </p>
+  </div>
+</div>
+
+<div class="contact-links">
+  <a href="https://www.instagram.com/annaaphan/" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/instagram_icon.jpg') }}" alt="Instagram">
+  </a>
+  <a href="https://Linkedin.com/in/phannav" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/social-linkedin.jpg') }}" alt="LinkedIn">
+  </a>
+  <a href="mailto:Phan.annavo@gmail.com" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/mail-logo.jpg') }}" alt="Email">
+  </a>
+  <a href="https://www.tiktok.com/@annaaphan?_t=8lQScYPhHpK&_r=1" target="_blank" class="contact-link-small">
+      <img src="{{ url_for('static', filename='main/images/tiktok-logo.jpg') }}" alt="TikTok">
+    </a>
+</div>
+{% endblock %}
+
+

@@ -1,0 +1,55 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<div class="content-row-travel">
+    <div class="photo-column-travel">
+        <img src="../../../static/main/images/USA/DV/DV-1.jpg">
+        <img src="../../../static/main/images/USA/DV/DV-2.jpg">
+        <img src="../../../static/main/images/USA/DV/DV-3.png">
+        <img src="../../../static/main/images/USA/DV/DV-4.png">
+        <img src="../../../static/main/images/USA/DV/DV-5.jpg">
+        <img src="../../../static/main/images/USA/DV/DV-6.png">
+        <img src="../../../static/main/images/USA/DV/DV-7.png">
+        <img src="../../../static/main/images/USA/DV/DV-8.png">
+        <img src="../../../static/main/images/USA/DV/DV-9.png">
+    </div>
+    <div class="text-column-travel">
+
+    <div class="title-area-travel">
+        <h1>ROAD TRIP FROM SANTA BARBARA TO DEATH VALLEY</h1>
+        <h2>⚲ Palawan, Philippines</h2>
+        <h3>February 16 2021</h3>
+        <div class="link-container">
+            <a href="{{ url_for('static', filename='main/pdf-documents/USA-pdf/dv.pdf') }}" class="download-link" download>Itinerary</a>
+        </div>
+    </div>
+    
+    <p class="paragraph-travel"> 
+        Stepping into Palawan, Philippines, felt like walking into a movie, it was so cinematically beautiful. This island might be small, but it unfolds like a tale of nature's wonders. The waters are unbelievably pristine, making it hard to believe it wasn't all just a dream. It definitely became my favorite beach of all time, nothing could ever beat Palawan! Well at least for right now.
+    </p>
+    <p class="paragraph-travel"> 
+        My tour of El Nido was the highlight. The boat rides and island hopping were incredible. They provided meals during the tour, showcasing the rich local culture through delightful flavors. One charming highlight was the "coconut man," who drifted from island to island, skillfully chopping up fresh coconuts for us thirsty tourists. His presence added a sweet local touch to our tropical tour, making every moment feel personal and genuinely heartwarming. Palawan’s sunsets are also a gem, often rated among the top in the world for their breathtaking beauty. Every evening was a bright orange and pink display of colors that seemed to set the ocean aflame, everyday was so wonderful here.
+    </p>
+    <p class="paragraph-travel"> 
+        Palawan is a small island with so much to offer. Every corner tells a story, every meal shares a tradition, and every wave sings a lullaby. This trip wasn’t just a visit to a destination, it was a journey into a heavenly paradise, forever captured in my eyes. 
+    </p>
+  </div>
+</div>
+
+<div class="contact-links">
+  <a href="https://www.instagram.com/annaaphan/" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/instagram_icon.jpg') }}" alt="Instagram">
+  </a>
+  <a href="https://Linkedin.com/in/phannav" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/social-linkedin.jpg') }}" alt="LinkedIn">
+  </a>
+  <a href="mailto:Phan.annavo@gmail.com" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/mail-logo.jpg') }}" alt="Email">
+  </a>
+  <a href="https://www.tiktok.com/@annaaphan?_t=8lQScYPhHpK&_r=1" target="_blank" class="contact-link-small">
+      <img src="{{ url_for('static', filename='main/images/tiktok-logo.jpg') }}" alt="TikTok">
+    </a>
+</div>
+{% endblock %}
+
+

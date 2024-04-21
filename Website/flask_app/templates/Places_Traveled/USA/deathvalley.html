@@ -1,0 +1,55 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<div class="content-row-travel">
+    <div class="photo-column-travel">
+        <img src="../../../static/main/images/USA/DV/DV-1.jpg">
+        <img src="../../../static/main/images/USA/DV/DV-2.jpg">
+        <img src="../../../static/main/images/USA/DV/DV-3.png">
+        <img src="../../../static/main/images/USA/DV/DV-4.png">
+        <img src="../../../static/main/images/USA/DV/DV-5.jpg">
+        <img src="../../../static/main/images/USA/DV/DV-6.png">
+        <img src="../../../static/main/images/USA/DV/DV-7.png">
+        <img src="../../../static/main/images/USA/DV/DV-8.png">
+        <img src="../../../static/main/images/USA/DV/DV-9.png">
+    </div>
+    <div class="text-column-travel">
+
+    <div class="title-area-travel">
+        <h1>ROAD TRIP FROM SANTA BARBARA TO DEATH VALLEY</h1>
+        <h2>⚲ Death Valley, California</h2>
+        <h3>February 16 2021</h3>
+        <div class="link-container">
+            <a href="{{ url_for('static', filename='main/pdf-documents/USA-pdf/dv.pdf') }}" class="download-link" download>Itinerary</a>
+        </div>
+    </div>
+    
+    <p class="paragraph-travel"> 
+        Starting my journey from Santa Barbara, where I was living at the time during my studies at UCSB, the drive to Death Valley took around 6 hours. But oh, what an adventure it was! Every mile brought new sights that filled my heart with joy and wonder.
+    </p>
+    <p class="paragraph-travel"> 
+        In Death Valley, Artist Palette's colorful hills looked like they were from a dream. At Dante View, I saw the vastness of Death Valley spread out before me, it was so peaceful. I visited Badwater Basin, the lowest point in North America, where the salt flats stretched endlessly. Despite the heat, I walked on them, feeling the crunchy salt beneath my feet. And the Mesquite Sand Dunes? They felt like a never ending sea of sand. It was like being in a desert paradise. Make sure to stay hydrated and pack snacks for the journey since there is not much food around! And of course, I took lots of photos to remember the trip.
+    </p>
+    <p class="paragraph-travel"> 
+        If you ever want an adventure that'll leave you speechless, I recommend Death Valley. Just check the weather and road conditions first, I recommend winter and spring so it doesn't get too hot. Get ready for an unforgettable journey.
+    </p>
+  </div>
+</div>
+
+<div class="contact-links">
+  <a href="https://www.instagram.com/annaaphan/" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/instagram_icon.jpg') }}" alt="Instagram">
+  </a>
+  <a href="https://Linkedin.com/in/phannav" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/social-linkedin.jpg') }}" alt="LinkedIn">
+  </a>
+  <a href="mailto:Phan.annavo@gmail.com" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/mail-logo.jpg') }}" alt="Email">
+  </a>
+  <a href="https://www.tiktok.com/@annaaphan?_t=8lQScYPhHpK&_r=1" target="_blank" class="contact-link-small">
+      <img src="{{ url_for('static', filename='main/images/tiktok-logo.jpg') }}" alt="TikTok">
+    </a>
+</div>
+{% endblock %}
+
+

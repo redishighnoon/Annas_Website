@@ -1,0 +1,62 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<div class="content-row-travel">
+    <div class="photo-column-travel">
+        <img src="../../../static/main/images/Korea/Jeju/jeju-1.jpeg">
+        <img src="../../../static/main/images/Korea/Jeju/jeju-2.jpeg">
+        <img src="../../../static/main/images/Korea/Jeju/jeju-3.jpeg">
+        <img src="../../../static/main/images/Korea/Jeju/jeju-4.jpeg">
+        <img src="../../../static/main/images/Korea/Jeju/jeju-5.png">
+        <img src="../../../static/main/images/Korea/Jeju/jeju-6.png">
+        <img src="../../../static/main/images/Korea/Jeju/jeju-7.jpg">
+        <img src="../../../static/main/images/Korea/Jeju/jeju-8.jpg">
+        <img src="../../../static/main/images/Korea/Jeju/jeju-9.png">
+        <img src="../../../static/main/images/Korea/Jeju/jeju-10.jpg">
+        <img src="../../../static/main/images/Korea/Jeju/jeju-11.jpg">
+        <img src="../../../static/main/images/Korea/Jeju/jeju-12.jpg">
+        <img src="../../../static/main/images/Korea/Jeju/jeju-13.jpg">
+    </div>
+    <div class="text-column-travel">
+
+    <div class="title-area-travel">
+        <h1>FALLING IN LOVE WITH JEJU</h1>
+        <h2>⚲ Jeju, South Korea</h2>
+        <h3>June 02 2022</h3>
+        <div class="link-container">
+            <a href="{{ url_for('static', filename='main/pdf-documents/korea-pdf/Jeju-Itinerary.pdf') }}" class="download-link" download>Itinerary</a>
+        </div>
+    </div>
+    
+    <p class="paragraph-travel"> 
+      Waves of the South Korean coast lie a gem unlike any other, Jeju Island. How my heart swells with love whenever I think of this enchanting paradise! Unlike bustling cities with towering skylines, Jeju offers a serene escape where time seems to slow down and nature's beauty takes center stage.
+    </p>
+    <p class="paragraph-travel"> 
+      One of my favorite memories on Jeju is trying Korean BBQ featuring their black pork. Believe me when I say, this pork belly is like no other. Its flavorful, melt-in-your-mouth texture is like no other, even when compared to the places in Seoul. Jeju truly stands out as the best.
+    </p>
+    <p class="paragraph-travel"> 
+      But Jeju isn't just about the food. Seongsan Peak is a must visit, where I embarked on a ferry ride to the adorable Udo Island. Each moment felt like a scene from a fairytale. From the majestic Sojeongbang Falls to the waters of Hwanguji Natural Pools, and the vibrant colors of the Hydrangea Flower Fields painting the landscape with hues of pink and blue, all these sights left me in awe of Jeju's natural wonders.
+    </p>
+    <p class="paragraph-travel">
+      Jeju, you stole my heart with your beauty and charm! Each moment spent on your shores felt like a love story unfolding, leaving a mark in my heart. Saying goodbye to this enchanting island, I carry with me memories that will forever warm my heart and a longing to return to your embrace, my beloved Jeju.
+    </p>
+  </div>
+</div>
+
+<div class="contact-links">
+  <a href="https://www.instagram.com/annaaphan/" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/instagram_icon.jpg') }}" alt="Instagram">
+  </a>
+  <a href="https://Linkedin.com/in/phannav" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/social-linkedin.jpg') }}" alt="LinkedIn">
+  </a>
+  <a href="mailto:Phan.annavo@gmail.com" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/mail-logo.jpg') }}" alt="Email">
+  </a>
+  <a href="https://www.tiktok.com/@annaaphan?_t=8lQScYPhHpK&_r=1" target="_blank" class="contact-link-small">
+      <img src="{{ url_for('static', filename='main/images/tiktok-logo.jpg') }}" alt="TikTok">
+    </a>
+</div>
+{% endblock %}
+
+

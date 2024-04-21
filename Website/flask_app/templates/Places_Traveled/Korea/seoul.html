@@ -1,0 +1,70 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<div class="content-row-travel">
+    <div class="photo-column-travel">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-1.jpg">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-2.jpg">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-3.jpg">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-4.jpg">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-5.jpeg">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-6.jpeg">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-7.jpg">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-8.jpeg">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-9.png">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-9.5.jpg">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-10.png">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-11.png">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-13.png">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-13.5.jpg">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-14.png">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-15.png">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-16.png">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-17.png">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-18.png">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-19.png">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-20.png">
+        <img src="../../../static/main/images/Korea/Seoul/seoul-21.jpg">
+    </div>
+    <div class="text-column-travel">
+
+    <div class="title-area-travel">
+        <h1>STUDY ABROAD IN KOREA</h1>
+        <h2>⚲ Seoul, South Korea</h2>
+        <h3>February 28 2022</h3>
+        <div class="link-container">
+            <a href="{{ url_for('static', filename='main/pdf-documents/korea-pdf/Seoul-Reccomendations.pdf') }}" class="download-link" download>Itinerary</a>
+            <span class="link-separator">|</span>
+            <a href="{{ url_for('static', filename='main/pdf-documents/korea-pdf/Seoul-Eats.pdf') }}" class="download-link" download>Seoul Eats</a>
+        </div>
+    </div>
+    
+    <p class="paragraph-travel"> 
+        Leaving behind the sun kissed shores of California, I left for a life changing adventure to Yonsei University, in the heart of South Korea. Little did I know that this journey would not only open my heart and eyes but also touch my soul in ways I never imagined. Studying art and design at Yonsei was more than just attending classes, it was introducing myself in culture and creativity. From the streets of Seoul to the mountainside, every moment was waiting to be discovered.
+    </p>
+    <p class="paragraph-travel"> 
+        My time in South Korea was learning to communicate not just through words, but through the language of the heart. Whether it was sharing stories over a steaming bowl of noodles or laughing with new friends under the city lights, each moment was through heartfelt friendships I could never forget. As I reflect on my time at Yonsei, I can't help but feel a wave of emotion wash over me. The memories of late night study sessions, spontaneous adventures, and heartwarming encounters flood my mind, reminding me how this experience has had on my life. With the sense of nostalgia, the countless moments that South Korea had upon me. From exploring markets like Gwangjang Market and Namdaemun Market to indulging in mouthwatering delights like Korean BBQ and fried chicken, each experience was a love of flavors and comfort.
+    </p>
+    <p class="paragraph-travel"> 
+        As I bid farewell to this sweet city, I carry with me not just memories, but love for South Korea's beauty, with its warmth and charm, will forever hold a special place in my heart, reminding me that the greatest adventures are often found in the unlikeliest of places.
+    </p>
+  </div>
+</div>
+
+<div class="contact-links">
+  <a href="https://www.instagram.com/annaaphan/" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/instagram_icon.jpg') }}" alt="Instagram">
+  </a>
+  <a href="https://Linkedin.com/in/phannav" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/social-linkedin.jpg') }}" alt="LinkedIn">
+  </a>
+  <a href="mailto:Phan.annavo@gmail.com" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/mail-logo.jpg') }}" alt="Email">
+  </a>
+  <a href="https://www.tiktok.com/@annaaphan?_t=8lQScYPhHpK&_r=1" target="_blank" class="contact-link-small">
+      <img src="{{ url_for('static', filename='main/images/tiktok-logo.jpg') }}" alt="TikTok">
+    </a>
+</div>
+{% endblock %}
+
+

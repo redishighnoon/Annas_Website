@@ -1,0 +1,69 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<div class="content-row-travel">
+    <div class="photo-column-travel">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-1.jpg">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-2.jpeg">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-3.jpeg">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-4.JPEG">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-5.jpeg">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-6.jpeg">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-7.JPEG">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-8.jpg">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-9.jpg">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-10.jpg">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-11.jpg">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-12.jpg">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-13.jpg">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-14.jpg">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-15.jpg">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-16.jpg">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-17.jpg">
+        <img src="../../../static/main/images/Mexico/Guanajuato/gua-18.jpg">
+
+
+    </div>
+    <div class="text-column-travel">
+
+    <div class="title-area-travel">
+        <h1>GUADALAJARA TO GUANAJUATO</h1>
+        <h2>⚲ Guanajuato, Mexico</h2>
+        <h3>August 15 2022</h3>
+        <div class="link-container">
+            <a href="{{ url_for('static', filename='main/pdf-documents/mexico/Guadalajara to guanajuato.pdf') }}" class="download-link" download>Itinerary</a>
+        </div>
+    </div>
+    
+    <p class="paragraph-travel"> 
+        In the heart of Mexico lies two cities that's as romantic as it gets, Guadalajara to Guanajuato. It's a place where love is in the air, and kindness fills the streets. Walking through the cobblestone alleys, you'll find yourself surrounded by big crowds of people from all walks of life, coming together to share cultural food and laughter.
+    </p>
+    <p class="paragraph-travel"> 
+        During my time in Guadalajara, I had the chance to visit some incredible places, like Foco Tonal, a spiritual and religious experience that opened my eyes to the local culture. Then making it to Guanajuato, Museo Iconográfico Del Quijote and Museo del Pueblo de Guanajuato offered insights into the city's rich history, while Mercado Hidalgo provided a taste of authentic street food that I'll never forget.
+    </p>
+    <p class="paragraph-travel"> 
+        But the best part of Guanajuato? The people. They're so bright and happy, always ready to welcome you with open arms and share their love for their city. Whether you're exploring the Regional Museum of Guanajuato Alhóndiga de Granaditas or simply strolling through the streets, you'll feel the warmth and hospitality that make this city so special.
+    </p>
+    <p class="paragraph-travel">
+        In Guanajuato, every moment feels like a dream, filled with romance, laughter, and unforgettable experiences. It's a place that will capture your heart and leave you longing to return again and again.
+    </p>
+  </div>
+</div>
+
+<div class="contact-links">
+  <a href="https://www.instagram.com/annaaphan/" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/instagram_icon.jpg') }}" alt="Instagram">
+  </a>
+  <a href="https://Linkedin.com/in/phannav" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/social-linkedin.jpg') }}" alt="LinkedIn">
+  </a>
+  <a href="mailto:Phan.annavo@gmail.com" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/mail-logo.jpg') }}" alt="Email">
+  </a>
+  <a href="https://www.tiktok.com/@annaaphan?_t=8lQScYPhHpK&_r=1" target="_blank" class="contact-link-small">
+      <img src="{{ url_for('static', filename='main/images/tiktok-logo.jpg') }}" alt="TikTok">
+    </a>
+</div>
+{% endblock %}
+
+

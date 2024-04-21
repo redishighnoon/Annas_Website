@@ -12,18 +12,24 @@
     font-family: 'EB Garamond', serif;
     font-size: 4vh;
     font-weight: normal;
+    background-color: rgba(255, 255, 255, 0.6); /* White with 80% opacity */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: Adds rounded corners */
 }
 
 .contact-section p {
     font-family: 'EB Garamond', serif;
     font-size: 2vh;
+    background-color: rgba(255, 255, 255, 0.6); /* White with 80% opacity */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: Adds rounded corners */
 }
 
 .contact-links {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2px;
     margin-top: 35px;
 }
 
@@ -37,22 +43,29 @@
 }
 
 .contact-link-small {
-    margin-top: 5%;
+    margin-top: 40%;
     display: inline-flex;
-    width: 30px;
-    height: 30px;
+    width: 2vw;  /* Or fixed width, e.g., 80px */
+    min-width: 20px;
+    height: 2vw;  /* Make height the same as width for square containers or adjust as needed */
+    min-height: 20px;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    padding-bottom: 10px;
+    
 }
 .contact-link-small img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;  /* Image will fill the width of its container */
+    height: auto;  /* Height will adjust to maintain aspect ratio */
     object-fit: contain;
+    border-radius: 10px;  /* Adjusts the roundness of the corners */
 }
 .contact-link img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    border-radius: 10px;  /* Adjusts the roundness of the corners */
 }
 
   

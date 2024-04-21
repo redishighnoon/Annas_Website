@@ -26,9 +26,10 @@
 
 /* Specific styling for images within the photo column */
 .photo-column-travel img {
-    width: auto; /* Let the image's width be dictated by its natural size */
+    width: 100%; /* Let the image's width be dictated by its natural size */
     max-width: 80%; /* Ensure image is not stretched wider than its container */
     height: auto; /* Maintain the image's aspect ratio */
+    object-fit: cover; /* Ensures the image covers the frame without distorting aspect ratio */
     margin-bottom: 10px; /* Adds space between stacked images */
 }
 
@@ -62,21 +63,23 @@
     align-items: center; /* Centers content horizontally in the container */
 }
 
-/* New container for links */
-.links-container {
-    display: flex;
-    width: 100%; /* Takes full width of title-area-travel */
-    justify-content: space-between; /* Places children at the far ends */
-    align-items: center; /* Aligns items horizontally at the center */
+
+.link-container a {
+    padding-top: 15%; /* Removes padding at the top */
+    padding-bottom: 15%;
+    font-size: clamp(11px, 1vw, 15px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
 }
 
 .text-column-travel h1 {
     font-family: 'EB Garamond', sans-serif;
-    font-size: clamp(40px, 2vw, 60px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
+    font-size: clamp(30px, 2vw, 60px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
     font-weight: normal;
     padding: 10px 10px 0 10px; /* Top, right, bottom, and left padding */
     text-align: center; /* Centers the text horizontally */
     margin-bottom: 0; /* Removes default margin at the bottom */
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .text-column-travel h2 {
@@ -86,6 +89,18 @@
     font-weight: normal;
     margin-bottom: 0; /* Removes default margin at the bottom */
     margin-top: 0; /* Removes default margin at the top */
+    padding-bottom: 0;
+}
+
+.title-area-travel h3 {
+    padding: 10px; /* Adjust padding as needed */
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(10px, 1vw, 15px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
+    font-weight: normal;
+    margin-bottom: 0; /* Removes default margin at the bottom */
+    margin-top: 0; /* Removes default margin at the top */
+    padding-top: 0; /* Removes padding at the bottom */
+    padding-bottom: 0;
 }
 
 .text-column-travel p {
@@ -105,8 +120,9 @@
 }
 
 .link-separator {
+    padding: 0;
     color: #000000; /* Same color as your links or as needed */
-    margin: 0 10px; /* Adds horizontal spacing around the separator */
+    margin: 0;
     font-size: 16px; /* Ensure it matches the size of the links or adjust as needed */
     display: inline-flex; /* Helps in aligning it vertically with the links */
     align-items: center; /* Centers it vertically relative to the links */
