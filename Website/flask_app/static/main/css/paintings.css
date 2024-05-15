@@ -1,0 +1,105 @@
+/* Paintings Gallery Styling */
+.painting-gallery {
+    height: auto;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr; /* Creates a single column */
+    gap: 10vh; /* Space between paintings */
+    padding: 20px; /* Padding around the grid */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.painting-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Ensure the container takes full width of its parent */
+    margin: auto;
+}
+
+.painting-toggle {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.painting-container img {
+    width: 80%;
+    height: auto;
+    max-height: 90vh;
+    display: block;
+    object-fit: contain; /* Ensure images maintain their aspect ratio and fit within the container */
+}
+
+.painting-description {
+    width: 80%;
+    max-width: painting-container img;
+    background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: height 0.3s ease; /* Smooth transition when height changes */
+}
+
+.painting-description h1 {
+    font-size: clamp(20px, 2vw, 36px); /* Larger size for main title */
+    font-weight: normal;
+    font-family: 'EB Garamond', serif;
+    margin-bottom: 0;
+}
+
+.painting-description h2 {
+    margin-top: 10px;
+    font-size: clamp(14px, 1.5vw, 27px); /* Slightly smaller than h1 */
+    font-weight: normal;
+    font-family: 'EB Garamond', serif;
+}
+
+.painting-description p {
+    font-size: clamp(11px, 1vw, 20px); /* Smallest size for regular text */
+    font-style: italic; /* Italicize the text */
+}
+
+.toggle-image {
+    display: none; /* Hide images by default */
+    object-fit: contain; /* Ensure images maintain their aspect ratio and fit within the container */
+}
+
+.toggle-image.active {
+    display: block; /* Show the active image */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: clamp(20px, 5vw, 40px); 
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0); /* White with 0% opacity */
+    border: none;
+    padding: clamp(10px, 2.5vw, 20px); 
+    outline: none;
+    z-index: 10;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    color: rgba(128, 128, 128, 0.8);
+}
+
+.flip-image {
+    transform: rotate(180deg); /* Rotate the image by 180 degrees */
+}

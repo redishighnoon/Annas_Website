@@ -1,0 +1,43 @@
+.profile-image-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 30vw; /* Size relative to viewport width */
+    max-width: 500px; /* Maximum size */
+    min-width: 300px;
+    height: auto; /* Keep it a square */
+    max-height: 500px; /* Maximum size */
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.7); /* Transparent border */
+}
+
+.profile-container {
+    text-align: center;
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 50px 50px; /* Vertical and horizontal padding */
+    border-radius: 1vw;
+    position: relative;
+    z-index: 1;
+    padding-top: 0; /* Remove padding at the top */
+}
+
+.profile-container p {
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent background for paragraphs */
+    font-family: 'EB Garamond', sans-serif;
+    padding: 20px; /* Adjust padding as needed */
+    font-size: clamp(15px, 2vw, 27px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
+}
+
+.about-header {
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent background for paragraphs */
+    font-family: 'EB Garamond', sans-serif;
+    font-size: clamp(30px, 4vw, 60px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
+    font-weight: normal;
+    padding: 20px; /* Adjust padding as needed */
+    margin-top: 100px; /* Space below the header */
+    margin-bottom: 0; /* Removes default margin at the bottom */
+}

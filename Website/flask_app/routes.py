@@ -26,12 +26,20 @@ def about():
 def projects():
     return render_template('projects.html')
 
+@app.route('/paintings')
+def paintings():
+    return render_template('paintings.html')
+
 #######################################################################################
 # TRAVEL
 #######################################################################################
 @app.route('/travel')
 def travel():
     return render_template('travel.html')
+
+@app.route('/art')
+def art():
+    return render_template('art.html')
 
 # Routes for the individual cities in Korea
 @app.route('/Places_Traveled/Korea/seoul')
@@ -46,10 +54,13 @@ def jeju():
 def busan():
     return render_template('Places_Traveled/Korea/busan.html')
 
-# Routes for cities in the USA can be added in a similar fashion
 @app.route('/Places_Traveled/USA/deathvalley')
 def deathvalley():
     return render_template('Places_Traveled/USA/deathvalley.html')
+
+@app.route('/Places_Traveled/USA/washington')
+def washington():
+    return render_template('Places_Traveled/USA/washington.html')
 
 @app.route('/Places_Traveled/USA/losangeles')
 def losangeles():

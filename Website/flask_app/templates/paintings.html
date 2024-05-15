@@ -1,0 +1,257 @@
+{% extends 'shared/layout.html' %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='main/js/paintings.js') }}"></script>
+{% endblock %}
+
+{% block maincontent %}
+<main>
+    <div class="painting-gallery">
+        <!-- Example Painting -->
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 1 -->
+            <div class="painting-toggle">
+                <img src="{{ url_for('static', filename='main/images/Paintings/paint-1.jpg') }}" alt="Painting 1 - View 1" class="toggle-image active">
+                <img src="{{ url_for('static', filename='main/images/Paintings/paint-2.jpg') }}" alt="Painting 1 - View 2" class="toggle-image">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="painting-description">
+                <h1> Escape in the Northern Lights Gems </h1>
+                <h2> A dream landscape of the Aurora Borealis in the icy mountains </h2>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <!-- Example Painting -->
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <div class="painting-toggle">
+                <img src="{{ url_for('static', filename='main/images/Paintings/paint-3.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+                <img src="{{ url_for('static', filename='main/images/Paintings/paint-4.jpg') }}" alt="Painting 2 - View 2" class="toggle-image">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+            <div class="painting-description">
+                <h1> True Play </h1>
+                <h2> Reminiscences and glimpses of childhood fun when it was carefree and everything was let loose </h2>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-5.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Island Love Story </h1>
+                <h2> Sunset in Las Cabañas Beach </h2>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-6.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active flip-image">
+            <div class="painting-description">
+                <h1> Stellers Jay in the Wild </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-7.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Midnight in the Oceans of Santa Barbara </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-8.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Peonies from Pike`s Market</h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-9.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Heart in Seoul </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-10.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Sunset on the Golden Gate Bridge </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-16.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Fuchsia Flower Field </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-11.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Mangosteen </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-14.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Gigi and Pogi </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-15.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Ella and Leo </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-19.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Togepi </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-20.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Snorlax </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-21.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Squirtle </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-22.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Pikachu </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-23.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Charmander </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-24.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Bulbasaur </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-25.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1>Bowl of Ramen </h1>
+                <h2> Inspired by Vincent Trinidad</h2>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-26.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Scully and Maple </h1>
+                <p> Watercolor on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-27.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Justin`s Mercedez Wagon </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-13.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Lotus Koi Fish </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <img src="{{ url_for('static', filename='main/images/Paintings/paint-12.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+            <div class="painting-description">
+                <h1> Mom`s Cherry Blossom </h1>
+                <p> Acrylic on canvas </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <div class="painting-toggle">
+                <img src="{{ url_for('static', filename='main/images/Paintings/paint-17.5.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+                <img src="{{ url_for('static', filename='main/images/Paintings/paint-17.jpg') }}" alt="Painting 2 - View 2" class="toggle-image">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+            <div class="painting-description">
+                <h1> Custom Bape Vans </h1>
+                <p> Acrylic on Shoes </p>
+            </div>
+        </div>
+        <div class="painting-container">
+            <!-- Simple Image Toggle for Painting 2 -->
+            <div class="painting-toggle">
+                <img src="{{ url_for('static', filename='main/images/Paintings/paint-18.jpg') }}" alt="Painting 2 - View 1" class="toggle-image active">
+                <img src="{{ url_for('static', filename='main/images/Paintings/paint-18.5.jpg') }}" alt="Painting 2 - View 2" class="toggle-image">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+            <div class="painting-description">
+                <h1> Custom Bape Nike Airforces </h1>
+                <p> Acrylic on Shoes </p>
+            </div>
+        </div>
+        <!-- Add more paintings as needed -->
+    </div>
+    
+
+    <div class="contact-links">
+        <a href="https://www.instagram.com/annaaphan/" target="_blank" class="contact-link-small">
+          <img src="{{ url_for('static', filename='main/images/instagram_icon.jpg') }}" alt="Instagram">
+        </a>
+        <a href="https://Linkedin.com/in/phannav" target="_blank" class="contact-link-small">
+          <img src="{{ url_for('static', filename='main/images/social-linkedin.jpg') }}" alt="LinkedIn">
+        </a>
+        <a href="mailto:Phan.annavo@gmail.com" class="contact-link-small">
+          <img src="{{ url_for('static', filename='main/images/mail-logo.jpg') }}" alt="Email">
+        </a>
+        <a href="https://www.tiktok.com/@annaaphan?_t=8lQScYPhHpK&_r=1" target="_blank" class="contact-link-small">
+            <img src="{{ url_for('static', filename='main/images/tiktok-logo.jpg') }}" alt="TikTok">
+          </a>
+    </div>
+</main>
+
+
+{% endblock %}

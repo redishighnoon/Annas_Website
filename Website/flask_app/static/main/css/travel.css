@@ -52,6 +52,7 @@
     background-color: rgba(255, 255, 255, 0.7); /* White with 80% opacity */
     padding: 20px; /* Adjust padding as needed */
     margin-bottom: 20px; /* Add margin between paragraphs */
+    margin-top: 0;
     border-radius: 5px; /* Optional: Adds rounded corners */
 }
 
@@ -60,6 +61,7 @@
     display: flex; /* Enables Flexbox */
     flex-direction: column; /* Stacks children elements vertically */
     justify-content: center; /* Centers content vertically in the container */
+    margin-bottom: 20px; /* Add margin between paragraphs */
     align-items: center; /* Centers content horizontally in the container */
 }
 

@@ -20,10 +20,11 @@ nav {
 /* Customizes the appearance of links within the navbar-right section */
 .navbar a {
     color: #2e2e2e; /* Ensures text is white for readability */
-    font-size: clamp(15px, 2vw, 27px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
+    font-size: clamp(13px, 1.5vw, 22px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
     font-family: 'Montserrat', sans-serif;
     text-decoration: none; /* Removes underline from links for a cleaner look */
-    margin-right: 7vw; /* Adds spacing between individual links */
+    margin-right: 3vw; /* Adds spacing between individual links */
+    margin-left: 3vw;
 }
 
 /* Change opacity on hover for links */
@@ -34,26 +35,65 @@ nav {
 
 /* Dropdown container */
 .dropdown {
+    margin: 0; /* Removes default margin */
     position: relative; /* For absolute positioning of the dropdown content */
 }
 
 /* Style for non-clickable country label */
 .dropdown-label {
     display: block; /* Each label takes up the full width of the container */
-    margin-bottom: 30px;
-    padding: 0px 14px; /* top, right, bottom, left padding */
+    margin-bottom: 15px;
     color: #2e2e2e; /* Color of the country label text */
     font-family: 'Montserrat', sans-serif; /* Font family for the country labels */
-    font-size: clamp(15px, 2vw, 27px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
+    font-size: clamp(13px, 1.5vw, 22px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
     cursor: default; /* Default cursor for the non-clickable label */
+}
+
+/* Style for non-clickable country label */
+.art-label {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    display: block;
+    color: #2e2e2e;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(13px, 1.5vw, 22px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
+    cursor: default;
+}
+
+/* Initial state of the dropdown content */
+.art-dropdown-content {
+    opacity: 0;
+    left: 3vw;
+    padding-left: .5vw;
+    padding-right: .5vw;
+    visibility: hidden;
+    position: absolute;
+    top: calc(100% + 30px); /* Adjusted to include navbar padding */
+    left: 3.5vw;
+    background-color: rgba(255, 255, 255, 0.7); /* White with 80% opacity */
+    z-index: 1;
+    width: auto;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.art-dropdown-content a{
+    margin: 0;
+}
+/* Change the state when hovering over the dropdown trigger */
+.dropdown:hover .art-dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
 }
 
 /* Dropdown content (first level) */
 .dropdown-content {
     opacity: 0; /* Start with an opacity of 0 for a fade effect */
     position: absolute;
+    left: 3vw;
+    padding-left: .5vw;
     top: calc(100% + 30px); /* Adjusted to include navbar padding */
-    left: -10px;
     background-color: rgba(255, 255, 255, 0.7); /* White with 80% opacity */
     z-index: 1;
     min-width: 150px;
@@ -70,17 +110,16 @@ nav {
 
 /* Styles for the dropdown links */
 .dropdown-content a {
-    margin-right: 0; /* Removes the margin for dropdown items */
+    margin: 0;
     box-sizing: border-box; /* Ensures padding and border are included in the width/height */
     text-decoration: none;
     white-space: nowrap; /* Prevents text from wrapping */
     color: #2e2e2e; /* Text color for dropdown links */
-    padding: 0px 14px; /* Padding for the country label */
     margin-bottom: 15px;
     margin-top: 15px;
     display: block; /* Each link takes up the full width of the container */
     font-family: 'Montserrat', sans-serif; /* Font family for the dropdown links */
-    font-size: clamp(15px, 2vw, 27px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
+    font-size: clamp(13px, 1.5vw, 22px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
 }
 
 /* Submenu for second-level dropdown */

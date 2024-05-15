@@ -1,0 +1,40 @@
+.project-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: 
+    linear-gradient(to left, white 70%, rgba(255, 255, 255, 0) 0%), /* Gradient overlay to lighten the right side */
+    url('../static/main/images/background.jpg'); /* Adjust the path to your background image */
+    background-size: auto; /* Change from 'cover' to 'auto' */
+    background-repeat: repeat; /* Ensures the background image repeats */
+    height: 70vh; /* Full height of the viewport */
+    width: 100%; /* Ensure the body takes up the full width of the viewport */
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    height: 60%; /* Adjust the height as needed */
+    width: 100%; /* Fixed width */
+    min-width: 320px; /* Minimum width */
+}
+
+.project-container h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(30px, 3vw, 80px);
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+    margin-left: 20vw;
+    color: #000; /* Text color */
+}
+.project-container p {
+    padding-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(13px, 1.5vw, 27px); /* Ensures the font size is at least 14px, no more than 18px, and otherwise 2vw */
+    margin: 0; /* Remove default margin */
+    margin-left: 30vw;
+    color: #000; /* Text color */
+}

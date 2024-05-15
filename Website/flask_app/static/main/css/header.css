@@ -1,8 +1,7 @@
 header {
     width: 100%;
-    height: 40vw;
-
-    min-height: 440px; /* Ensures a minimum height of 300 pixels */
+    height: 37vw;
+    min-height: 300px; /* Ensures a minimum height of 300 pixels */
     background-image: url('../images/banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;

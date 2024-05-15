@@ -11,7 +11,10 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='main/css/footer.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='main/css/travel.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='main/css/home.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='main/css/paintings.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='main/css/contact.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='main/css/about.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='main/css/projects.css') }}">
   <link rel="shortcut icon" href="{{ url_for('static', filename='main/images/favicon.ico') }}">
 </head>
 
@@ -29,65 +32,67 @@
   
         <!-- Dropdown for Travel -->
         <div class="dropdown">
-          <a>Travel</a> <!-- Non-clickable placeholder -->
+          <a href="{{ url_for('travel') }}">Travel</a>
           <div class="dropdown-content">
-              <!-- Dropdown Menu for Korea -->
-              <div class="dropdown-submenu">
-                  <span class="dropdown-label">Korea</span> <!-- Non-clickable label for Korea -->
-                  <div class="dropdown-content-submenu">
-                      <a href="{{ url_for('seoul') }}">Seoul</a>
-                      <a href="{{ url_for('jeju') }}">Jeju</a>
-                      <a href="{{ url_for('busan') }}">Busan</a>
-                      <!-- More cities can be added here -->
-                  </div>
-              </div>
-              <!-- Dropdown Menu for USA -->
-              <div class="dropdown-submenu">
-                  <span class="dropdown-label">USA</span> <!-- Non-clickable label for USA -->
-                  <div class="dropdown-content-submenu">
-                      <a href="{{ url_for('deathvalley') }}">Death Valley</a>
-                      <a href="{{ url_for('losangeles') }}">Los Angeles</a>
-                      <a href="{{ url_for('oahu') }}">Hawaii</a>
-                      <a href="{{ url_for('michigan') }}">Michigan</a>
-                      <!-- More cities can be added here -->
-                  </div>
-              </div>
-              <!-- Dropdown Menu for Iceland -->
-              <div class="dropdown-submenu">
-                <span class="dropdown-label">Iceland</span> <!-- Non-clickable label for USA -->
-                <div class="dropdown-content-submenu">
-                    <a href="{{ url_for('Reykjavik') }}">Reykjavik</a>
-                    <!-- More cities can be added here -->
-                </div>
-            </div>
-            <!-- Dropdown Menu for Philippines -->
+            <!-- Dropdown Menu for USA -->
             <div class="dropdown-submenu">
-              <span class="dropdown-label">Philippines</span> <!-- Non-clickable label for Korea -->
+              <a> America </a> <!-- Non-clickable label for USA -->
               <div class="dropdown-content-submenu">
-                  <a href="{{ url_for('palawan') }}">Palawan</a>
-                  <!-- More cities can be added here -->
+                <a href="{{ url_for('deathvalley') }}">Death Valley</a>
+                <a href="{{ url_for('losangeles') }}">Los Angeles</a>
+                <a href="{{ url_for('michigan') }}">Michigan</a>
+                <a href="{{ url_for('oahu') }}">Hawaii</a>
+                <a href="{{ url_for('washington') }}">Washington</a>
+                <!-- More cities can be added here -->
+              </div>
+            </div>
+             <!-- Dropdown Menu for Iceland -->
+             <div class="dropdown-submenu">
+              <a> Iceland </a> <!-- Non-clickable label for Iceland -->
+              <div class="dropdown-content-submenu">
+                <a href="{{ url_for('Reykjavik') }}">Reykjavik</a>
+                <!-- More cities can be added here -->
+              </div>
+            </div>
+            <!-- Dropdown Menu for Korea -->
+            <div class="dropdown-submenu">
+              <a> Korea </a> <!-- Non-clickable label for Korea -->
+              <div class="dropdown-content-submenu">
+                <a href="{{ url_for('busan') }}">Busan</a>
+                <a href="{{ url_for('jeju') }}">Jeju</a>
+                <a href="{{ url_for('seoul') }}">Seoul</a>
+                <!-- More cities can be added here -->
               </div>
             </div>
             <!-- Dropdown Menu for Mexico -->
             <div class="dropdown-submenu">
-              <span class="dropdown-label">Mexico</span> <!-- Non-clickable label for Korea -->
+              <a> Mexico </a> <!-- Non-clickable label for Mexico -->
               <div class="dropdown-content-submenu">
-                  <a href="{{ url_for('guanajuato') }}">Guanajuato</a>
-                  <!-- More cities can be added here -->
+                <a href="{{ url_for('guanajuato') }}">Guanajuato</a>
+                <!-- More cities can be added here -->
               </div>
             </div>
-
+            <!-- Dropdown Menu for Philippines -->
+            <div class="dropdown-submenu">
+              <a> Philippines </a> <!-- Non-clickable label for Philippines -->
+              <div class="dropdown-content-submenu">
+                <a href="{{ url_for('palawan') }}">Palawan</a>
+                <!-- More cities can be added here -->
+              </div>
+            </div>
               <!-- Additional countries and their cities can follow the same pattern -->
           </div>
         </div>
-  
-        
-        <a href="{{ url_for('projects') }}">Art</a>
+
+        <a href="{{ url_for('paintings') }}">Artworks</a>
+        <a href="{{ url_for('projects') }}">Design</a>
         <a href="{{ url_for('about') }}">About</a>
         <a href="https://www.mercari.com/u/613576771?sv=0" target="_blank">Shop</a>
         <a href="{{ url_for('contact') }}">Contact</a>
       </div>
     </nav>
+
+    {% block extrajs %}{% endblock %}
 
     {% block maincontent %}{% endblock %}
 
@@ -97,7 +102,7 @@
       </div>
     </footer>
   </main>
-
+  {% block scripts %}{% endblock %}
 </body>
 
 </html>

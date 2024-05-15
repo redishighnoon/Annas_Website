@@ -1,0 +1,73 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<div class="content-row-travel">
+    <div class="photo-column-travel">
+        <img src="../../../static/main/images/USA/Washington/sea-1.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-2.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-3.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-4.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-5.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-6.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-7.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-8.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-9.JPG">
+        <img src="../../../static/main/images/USA/Washington/sea-10.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-11.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-12.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-13.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-14.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-15.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-16.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-17.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-18.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-19.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-20.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-21.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-22.jpg">
+        <img src="../../../static/main/images/USA/Washington/sea-23.jpg">
+    </div>
+    <div class="text-column-travel">
+
+    <div class="title-area-travel">
+        <h1>SPENDING MY SUMMERS AND WINTERS IN SEATTLE</h1>
+        <h2>⚲ SEATTLE, WASHINGTON</h2>
+
+        <div class="link-container">
+            <a href="{{ url_for('static', filename='main/pdf-documents/USA-pdf/Things_to_do_in_Washington_.pdf') }}" class="download-link" download>Itinerary</a>
+            <span class="link-separator">|</span>
+            <a href="{{ url_for('static', filename='main/pdf-documents/USA-pdf/Seattle-Eats.pdf') }}" class="download-link" download>Seattle Eats</a>
+        </div>
+    </div>
+    
+    <p class="paragraph-travel"> 
+        Growing up in California, I cherished almost every summer and winter spent in Seattle from the time I was nine years old. These seasonal trips were a vibrant part of my childhood, enriching my life with experiences in both cities. Whenever I think of Seattle, I can’t help but smile softly. It was there, in that city of ever changing skies and drizzling rain, that so much of my childhood unfolded. My two older sisters lived there, and they were my first real teachers about life, food, and adventure. They introduced me to flavors and experiences I’d never known.We’d try every food spot they loved, from the freshest local seafood like sushi, oysters, and crab, to beloved local favorites where Seattle's true culinary spirit shines, a true taste of the city’s vibrant food scene.
+    </p>
+    <p class="paragraph-travel"> 
+        But our explorations weren’t just about food. Seattle was where I first learned to push my limits. My sisters took me kayaking at Gas Works Park, city viewing at Alki Beach, where the horizon stretched forever. They took me on my first real outdoor adventure too, backpacking 20 miles with no experience, camping in the wilds of the Alpine Wilderness, and exploring the vast expanses of Olympic National Park. I remember feeling so small under the immense, star filled sky, and being next to big wild brown bears yet somehow it was exactly where I belonged.
+    </p>
+    <p class="paragraph-travel"> 
+        These adventures sparked something in me, a love for exploring that I carried into my solo trips. I ventured to majestic places like Mt. Rainier, each visit making me feel more connected to Washington, this place that became my second home. One of my favorite escapes has always been Leavenworth, the cute Bavarian village tucked away in the mountains. The lush greenery there, the quiet strength of the mountains, always bring a sense of peace that’s hard to find anywhere else. And I’ll never forget the ferry rides to the San Juan Islands during lavender season. The air, filled with the sweet scent of lavender, made those trips feel almost magical.
+    </p>
+    <p class="paragraph-travel"> 
+        Living between these two beautiful states, I’ve found a balance of sun and rain, of calm and adventure. Washington, with all its natural beauty and the memories of every summer and Christmas spent there, holds a big piece of my heart. It’s a place of first adventures, first leaps into the unknown, and a place I return to when I long for the feeling of home. Thanks for walking through these cherished memories with me. I feel truly blessed, each trip, each taste, and every burst of laughter has been a gift from my family, especially my sisters, who showed me the real love and beauty that Washington has to offer.
+    </div>
+</div>
+
+<div class="contact-links">
+  <a href="https://www.instagram.com/annaaphan/" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/instagram_icon.jpg') }}" alt="Instagram">
+  </a>
+  <a href="https://Linkedin.com/in/phannav" target="_blank" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/social-linkedin.jpg') }}" alt="LinkedIn">
+  </a>
+  <a href="mailto:Phan.annavo@gmail.com" class="contact-link-small">
+    <img src="{{ url_for('static', filename='main/images/mail-logo.jpg') }}" alt="Email">
+  </a>
+  <a href="https://www.tiktok.com/@annaaphan?_t=8lQScYPhHpK&_r=1" target="_blank" class="contact-link-small">
+      <img src="{{ url_for('static', filename='main/images/tiktok-logo.jpg') }}" alt="TikTok">
+    </a>
+</div>
+{% endblock %}
+
+
